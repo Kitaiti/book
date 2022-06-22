@@ -1,1 +1,9 @@
-@use "./about.scss";
+/* base */
+@use "./base/base";
+
+
+/* index */
+@use "./index";
+
+/* about */
+@use "./about";

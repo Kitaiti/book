@@ -1,0 +1,59 @@
+@mixin inner-p($t: (0em/16), $l: (25em/16), $b: (0em/16), $r: (25em/16),) {
+    margin: $t $l $b $r;
+}
+
+
+
+body{
+    max-width: 100%;
+    font-size: 16px;
+    margin: 0;
+    text-align: center;
+}
+
+li{
+    list-style: none;
+}
+
+
+.header{
+    max-width: 1280px;
+    height: 130px;
+    margin: 0 auto;
+    &__inner{
+        @include inner-p();
+        padding-top: (30em/16);
+        padding-bottom: (15em/16);
+        display: flex;
+        flex-wrap: nowrap;
+
+        height: 130px;
+    }
+    &__logo.logo{
+        width: 60%;
+        align-content: center;
+        .logo{
+            &__link{
+                &__visual{
+
+                }
+            }
+        }
+    }
+    &__nav.nav{
+        width: 40%;
+        align-items: baseline;
+        .nav{
+            &__gnav{
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                align-items:stretch;
+                &__list{
+                    &__link{
+                    }
+                }
+            }
+        }
+    }
+}

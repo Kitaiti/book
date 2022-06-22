@@ -9,118 +9,171 @@
     <title>（トップページ）</title>
 </head>
 <body>
+  <!-- header -->
   <header class="header">
-    <h1 class="header__logo logo">
-      <img src="" alt="イバショラボのロゴ" class="rego__img">
-    </h1>
-    <nav class="header__nav nav">
-      <ul class="nav__content">
-        <li class="nav__text">TOP</li>
-        <li class="nav__text">インタビュー</li>
-        <li class="nav__text">料金</li>
-      </ul>
-    </nav>
-    <div class="header__img">
-      <img src="" alt="サイトのメインイメージ">
+    <div class="header__inner">
+      <!-- logo -->
+      <h1 class="header__logo logo">
+        <a href="/index.html" class="logo__link">
+          <img src="" alt="イバショラボのロゴ" class="logo__visual">
+        </a>
+      </h1>
+
+      <!-- nav -->
+      <nav class="header__nav nav">
+        <ul class="nav__gnav">
+          <li class="nav__gnav__list"><a href="#" class="nav__gnav__link">TOP</a> </li>
+          <li class="nav__gnav__list"><a href="#" class="nav__gnav__link">インタビュー</a></li>
+          <li class="nav__gnav__list"><a href="#" class="nav__gnav__link">料金</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
+  <!-- main -->
   <main class="main">
-    <div class="main-in">
-      <div class="main__about about">
-        <h3 class="about__sub ">About</h3>
-        <h2 class="about__title">暮らせる図書館について</h2>
-        <p class="about__text">
-          がコンセプトの図書館です。<br>
-          「帰る」というキーワードは〇〇に行くというよりも、実家やおばあちゃんちに
-          「帰る」という位置付けの場所になりたい、という思いを込めております。
-          </p>
-        <a href="/about/index.html" class="about__link">もっと知りたい</a>
-      </div>
-
-      <div class="main__price price">
-        <h3 class="price__sub ">Price</h3>
-        <h2 class="price__title">料金について</h2>
-        <div class="price__expenses expenses">
-          <p class="expenses__title">会員費</p>
+    <div class="main__inner">
+      <!-- main__viusal -->
+      <section class="main__visaul">
+        <div class="main__visaul__inner">
+          <img src="/img/LP/first_visual.png" alt="" class="main__visaul__img">
         </div>
+      </section>
 
-        <div class="price__rental rental">
-          <p class="rental__title">レンタルスペース料金</p>
-        </div>
-      </div>
-
-      <div class="main__access access">
-        <h2 class="access__title">Access</h2>
-        <div class="access__box">
-          <div class="access__content">
-            <div class="access__address">
-              <h3 class="access__address__title">住所</h3>
-              <p class="access__address__text">
-                〒465-0085<br>
-                愛知県名古屋市名東区西山本通2-27-2F
-              </p>
-            </div>
-            <div class="access__public">
-              <h3 class="access__public__title">公共交通機関</h3>
-              <p class="access__public__text">
-                地下鉄東山線「星ヶ丘駅」5番出口 徒歩15分<br>
-                乗車停「星ヶ丘」→ 下車停「西山本通二丁目」
-              </p>
-            </div>
-            <div class="access__parking">
-              <h3 class="access__parking__title">駐車場について</h3>
-              <p class="access__parking__text">
-                当館には専用駐車場はございません。<br>
-                お近くのコインパーキングについては
-                ニシヤマナガヤの公式サイトをご覧ください。
-              </p>
-            </div>
+      <!-- main__content -->
+      <section class="main__content content">
+        <!-- about -->
+        <article class="content__about about">
+          <div class="about__inner">
+            <h3 class="about__title-sub content__title-sub">About</h3>
+            <h2 class="about__title content__title-sub">暮らせる図書館について</h2>
+            <p class="about__text"><span>「帰る・くつろぐ・本がある　暮らせる図書館」</span><br>がコンセプトの図書館です。<br>「帰る」というキーワードは〇〇に行くというよりも、実家やおばあちゃんちに<br>「帰る」という位置付けの場所になりたい、という思いを込めております。</p>
           </div>
-          <div class="access__map">
+          <a href="/about/index.html" class="about__link content__link">もっと知りたい→</a>
+        </article>
+
+        <!-- price -->
+        <article class="content__price price">
+          <div class="price__inner">
+            <h3 class="price__title-sub content__title-sub">Price</h3>
+            <h2 class="price__title content__title">料金について</h2>
+
+            <!-- price__table -->
+            <section class="price__table">
+
+              <!-- price__member -->
+              <article class="price__member">
+                <h4 class="price__member__title price__table__title">会員費</h4>
+                <!-- 会員の料金表が入る -->
+              </article>
+
+              <!-- price__rental -->
+              <article class="price__rental">
+                <h4 class="price__rental__title price__rental__title">レンタルスペース料金</h4>
+                <!-- レンタル料金表が入る -->
+              </article>
+
+              <a href="/price/index.html" class="price__link content__link">詳細→</a>
+            </section>
           </div>
-        </div>
-      </div>
+        </article>
+
+        <!-- access -->
+        <article class="content__access access">
+          <div class="access__inner">
+
+            <!-- access__map -->
+            <section class="access__map">
+
+              <!-- access__map__information -->
+              <div class="access__map__information information">
+
+                <!-- 住所 -->
+                <div class="information__box">
+                  <h3 class="information__box__title">住所</h3>
+                  <p class="information__box__text"><span>〒465-0085</span> <br> 愛知県名古屋市名東区西山本通2-27-2F</p>
+                </div>
+
+                <!-- 公共交通機関 -->
+                <div class="information__box">
+                  <h3 class="information__box__title">公共交通機関</h3>
+                  <p class="information__box__text">地下鉄東山線「星ヶ丘駅」5番出口 徒歩15分 <br> 乗車停「星ヶ丘」→ 下車停「西山本通二丁目」</p>
+                </div>
+
+                <!-- 駐車場について -->
+                <div class="information__box">
+                  <h3 class="information__box__title">駐車場について</h3>
+                  <p class="information__box__text">当館には専用駐車場はございません。<br> お近くのコインパーキングについては <br> ニシヤマナガヤの公式サイトをご覧ください。</p>
+                </div>
+              </div>
+              <!--  -->
+              <div class="access__map__visual">
+                <!-- 画像ではなく、本番はGoogle　map　埋め込み -->
+                <img src="/img/LP/map.png" alt="">
+              </div>
+            </section>
+          </div>
+        </article>
+
+      </section>
     </div>
   </main>
     
+  <!-- footer -->
     <footer class="footer">
-    <div class="footer__sns sns" id="sns">
-      <h2 class="sns__title">SNS</h2>
-      <div class="sns__icon">
-        <img src="" alt="イバショラボのラインのアイコン">
-        <img src="" alt="イバショラボのインスタグラムのアイコン">
-      </div>
-      <div class="sns__text">
-        インスタ、LINEにてイベントの申し込みやお問い合わせなどを行っています。登録の方お願いします。
-      </div>
-    </div>
-  </div>
-    <div class="footer__box">
-      <div class="footer__main">
-        <img src="" alt="イバショラボのロゴ">
-        <p class="footer__text">
-          〒465-0085<br>
-          愛知県名古屋市名東区西山本通2-23
-        </p>
-      </div>
-      <div class="footer__detail">
-        <div class="footer__nav__box">
-          <ul class="footer__nav__content">
-            <li class="footer__nav__text">TOP</li>
-            <li class="footer__nav__text">インタビュー</li>
-            <li class="footer__nav__text">料金</li>
-          </ul>
-        </div>
-        <div class="footer__icon">
-          <img src="" alt="イバショラボのラインのアイコン">
-          <img src="" alt="イバショラボのインスタグラムのアイコン">
-        </div>
-      </div>
+      <div class="footer__inner">
+        <!-- footer__content -->
+        <section class="footer__content content">
 
+          <!-- sns -->
+          <article class="content__sns sns">
+            <h3 class="sns__title-sub content__title-sub">SNS</h3>
+            <ul class="sns__icon">
+              <li class="sns__icon__list"><img src="/img/common/line_icon.png" alt="" class="sns__icon__list__img"></li>
+              <li class="sns__icon__list"><img src="/img/common/insta_icon.png" alt="" class="sns__icon__list__img"></li>
+            </ul>
+            <p class="sns__text">インスタ、LINEにてイベントの申し込みやお問い合わせなどを行っています。登録の方お願いします。</p>
+          </article>
+          
+          <!-- content__menu -->
+          <article class="content__menu menu">
+            <div class="menu__inner">
+              
+              <!-- menu__box -->
+              <div class="menu__box">
+              <!-- logo -->
+              <h1 class="menu__box__logo logo">
+                <a href="/index.html" class="logo__link"></a>
+                  <img src="" alt="イバショラボのロゴ" class="logo__visual">
+                </a>
+              </h1>
 
+              <!-- nav -->
+              <nav class="menu__box__nav nav">
+                <ul class="nav__gnav">
+                  <li class="nav__gnav__list"><a href="#" class="nav__gnav__link">TOP</a></li>
+                  <li class="nav__gnav__list"><a href="#" class="nav__gnav__link">インタビュー</a></li>
+                  <li class="nav__gnav__list"><a href="#" class="nav__gnav__link">料金</a></li>
+                </ul>
+              </nav>
+            
+            </div>
+              <!-- menu__box -->
+              <div class="menu__box">
+                <!-- address -->
+                <p class="menu__box__address"><span>〒465-0085</span> <br> 愛知県名古屋市名東区西山本通2-23</p>
 
-    </div>
-  </footer>
-</body>
+                <!-- sns -->
+                <ul class="menu__box__sns">
+                  <li class="menu__box__sns__icon"><img src="/img/common/line_icon.png" alt="" class="menu__box__sns__icon__img"></li>
+                  <li class="menu__box__sns__icon"><img src="/img/common/insta_icon.png" alt="" class="menu__box__sns__icon__img"></li>
+                </ul>
+              </div>
+            </div>
+          </article>
+          <small>&copy;2022 kuraseru tosyokann</small>
+        </section>
+      </div>
+    </footer>
+  </body>
 </html>

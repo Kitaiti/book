@@ -1,0 +1,66 @@
+.main{
+    &__inner{
+    }
+    &__visual{
+        &__inner{
+            &__img{
+
+            }
+        }
+    }
+    // main__content
+    &__content.content{
+        .content{
+            // about
+            &__about.about{
+                .about{
+                    &__inner{
+
+                    }
+                    &__title-sub{
+
+                    }
+                    &__titel{
+
+                    }
+                    &__text{
+
+                    }
+                    &__link{
+
+                    }
+                }
+            }
+
+            // price
+            &__price.price{
+                .price{
+                    &__inner{
+
+                    }
+                    &__title-sub{
+
+                    }
+                    &__titel{
+
+                    }
+                    // price__table
+                    &__table{
+                        // price__member
+                        &__member{
+                            &__title{
+
+                            }
+                        }
+                        // price__rental
+                        &__price__rental{
+                            &__title{
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
