@@ -32,7 +32,69 @@
                 }
             }
 
-            // price
+            // price@use "./base/color" as color;
+
+.main{
+    &__inner{
+    }
+    // tumbnail
+    &__thumbnail{
+        margin: 0 calc(50% - 50vw);
+        width: 100vw;
+        height: 720px;
+        background-image: url(./img/LP/LP_main_visual.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        // &__visual{
+        // }
+    }
+    // about
+    &__about.about{
+        margin: 0 calc(50% - 50vw);
+        width: 100vw;
+        background-color: color.$color-about-base;
+        padding: (60em/16) 0;
+        .about{
+            
+        &__text{
+            span{
+                font-size: (36rem/16);
+                font-weight: bold;
+            }
+        }
+    }
+    &__Price{
+        margin: 0 calc(50% - 50vw);
+        width: 100vw;
+        background-color: color.$color-price-base;
+        padding: (60em/16) 0;
+        &__title{
+
+        }
+        &__list{
+
+        }
+        }
+    }
+
+
+
+
+    &__contnet{
+        &__title{
+            font-size: (30rem/16);
+            margin-top: (14em/30);
+            margin-bottom: (60em/30) ;
+        }
+        &__title-sub{
+            font-size: (20rem/16);
+        }
+        &__view{
+
+        }
+    }
+}
             &__price.price{
                 .price{
                     &__inner{

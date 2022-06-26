@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>（トップページ）</title>
 </head>
 <body>
@@ -34,88 +34,63 @@
   <main class="main">
     <div class="main__inner">
       <!-- main__viusal -->
-      <section class="main__visaul">
-        <div class="main__visaul__inner">
-          <img src="/img/LP/first_visual.png" alt="" class="main__visaul__img">
-        </div>
-      </section>
+      <div class="main__thumbnail">
+        <!-- <img src="./img/LP/LP_main_visual.png" alt="" class="main__thumbnail__visual"> -->
+      </div>
 
-      <!-- main__content -->
-      <section class="main__content content">
-        <!-- about -->
-        <article class="content__about about">
-          <div class="about__inner">
-            <h3 class="about__title-sub content__title-sub">About</h3>
-            <h2 class="about__title content__title-sub">暮らせる図書館について</h2>
-            <p class="about__text"><span>「帰る・くつろぐ・本がある　暮らせる図書館」</span><br>がコンセプトの図書館です。<br>「帰る」というキーワードは〇〇に行くというよりも、実家やおばあちゃんちに<br>「帰る」という位置付けの場所になりたい、という思いを込めております。</p>
-          </div>
-          <a href="/about/index.html" class="about__link content__link">もっと知りたい→</a>
-        </article>
+      <!-- main__about-->
+      <div class="main__about about">
+        <h3 class="main__content__title-sub">About</h3>
+        <h2 class="main__contnet__title">暮らせる図書館について</h2>
+        <p class="about__text"><span>「帰る・くつろぐ・本がある　暮らせる図書館」</span></p>
+        <p class="about__text">がコンセプトの図書館です。 <br> 「帰る」というキーワードは〇〇に行くというよりも、実家やおばあちゃんちに <br> 「帰る」という位置付けの場所になりたい、という思いを込めております.</p>
+        <a href="/about/index.html" class="main__content__view">もっと知りたい&rarr;</a>
+      </div>
 
-        <!-- price -->
-        <article class="content__price price">
-          <div class="price__inner">
-            <h3 class="price__title-sub content__title-sub">Price</h3>
-            <h2 class="price__title content__title">料金について</h2>
+      <!-- main__Price-->
+      <div class="main__Price">
+        <h3 class="main__content__title-sub">Price</h3>
+        <h2 class="main__contnet__title">料金について</h2>
 
-            <!-- price__table -->
-            <section class="price__table">
+        <h4 class="main__Price__title">会員費</h4>
+        <table class="main__Price__list">
 
-              <!-- price__member -->
-              <article class="price__member">
-                <h4 class="price__member__title price__table__title">会員費</h4>
-                <!-- 会員の料金表が入る -->
-              </article>
+        </table>
 
-              <!-- price__rental -->
-              <article class="price__rental">
-                <h4 class="price__rental__title price__rental__title">レンタルスペース料金</h4>
-                <!-- レンタル料金表が入る -->
-              </article>
+        <h4 class="main__price__title">レンタルスペース料金</h4>
+        <table class="main__Price__list">
+          
+        </table>
+        <a href="/about/index.html" class="main__content__view">詳細&rarr;</a>
+      </div>
 
-              <a href="/price/index.html" class="price__link content__link">詳細→</a>
-            </section>
-          </div>
-        </article>
+      <!-- main__access -->
+      <div class="main__access">
+        <table class="main__access__information">
 
-        <!-- access -->
-        <article class="content__access access">
-          <div class="access__inner">
+          <tr>
+            <th>住所</th>
+          </tr>
+          <tr>
+            <td>〒465-0085 <br> 愛知県名古屋市名東区西山本通2-27-2F</td>
+          </tr>
+          <tr>
+            <th>公共交通機関</th>
+          </tr>
+          <tr>
+            <td>地下鉄東山線「星ヶ丘駅」5番出口 徒歩15分乗車停「星ヶ丘」→ 下車停「西山本通二丁目」</td>
+          </tr>
+          <tr>
+            <th>駐車場について</th>
+          </tr>
+          <tr>
+            <td>当館には専用駐車場はございません。お近くのコインパーキングについてはニシヤマナガヤの公式サイトをご覧ください。</td>
+          </tr>
+          
+        </table>
 
-            <!-- access__map -->
-            <section class="access__map">
-
-              <!-- access__map__information -->
-              <div class="access__map__information information">
-
-                <!-- 住所 -->
-                <div class="information__box">
-                  <h3 class="information__box__title">住所</h3>
-                  <p class="information__box__text"><span>〒465-0085</span> <br> 愛知県名古屋市名東区西山本通2-27-2F</p>
-                </div>
-
-                <!-- 公共交通機関 -->
-                <div class="information__box">
-                  <h3 class="information__box__title">公共交通機関</h3>
-                  <p class="information__box__text">地下鉄東山線「星ヶ丘駅」5番出口 徒歩15分 <br> 乗車停「星ヶ丘」→ 下車停「西山本通二丁目」</p>
-                </div>
-
-                <!-- 駐車場について -->
-                <div class="information__box">
-                  <h3 class="information__box__title">駐車場について</h3>
-                  <p class="information__box__text">当館には専用駐車場はございません。<br> お近くのコインパーキングについては <br> ニシヤマナガヤの公式サイトをご覧ください。</p>
-                </div>
-              </div>
-              <!--  -->
-              <div class="access__map__visual">
-                <!-- 画像ではなく、本番はGoogle　map　埋め込み -->
-                <img src="/img/LP/map.png" alt="">
-              </div>
-            </section>
-          </div>
-        </article>
-
-      </section>
+        <img src="/img/LP/map.png" alt="">
+      </div>
     </div>
   </main>
     
