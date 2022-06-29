@@ -1,4 +1,4 @@
-@use "./base/color" as color;
+@use "./color" as color;
 
 @mixin inner-p($t: (0em/16), $l: (25em/16), $b: (0em/16), $r: (25em/16),) {
     margin: $t $l $b $r;
@@ -71,5 +71,48 @@ li{
 }
 
 p{
-    color: $color-text;
+    color: color.$color-text;
+}
+
+
+
+.footer{
+    background-color: #474747;
+    &__inner{
+        margin: (25em/16);
+        padding-top: (60em/16);
+        padding-bottom: (30em/16);
+    }
+    &__sns{
+        background-color: #FAFAFA;
+    }
+    .sns{
+        &__list{
+            &__link{
+                &__img{
+
+                }
+            }
+        }
+        &__text{
+
+        }
+    }
+    &__nav{
+        background-color: #474747;
+    }
+    &__logo{
+    }
+    .nav{
+        &__gnav{
+            &__list{
+
+            }
+        }
+        &__address{
+
+        }
+    }
+    .copyright{
+    }
 }
