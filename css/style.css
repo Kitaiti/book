@@ -44,6 +44,24 @@ li {
   margin: 1.5625em;
 }
 
+p {
+  color: #707070;
+}
+
+.footer {
+  background-color: #474747;
+}
+.footer__inner {
+  margin: 1.5625em;
+  padding-top: 3.75em;
+  padding-bottom: 1.875em;
+}
+.footer__sns {
+  background-color: #FAFAFA;
+}
+.footer__nav {
+  background-color: #474747;
+}
 .main__thumbnail {
   margin: 0 calc(50% - 50vw);
   width: 100vw;
@@ -63,22 +81,61 @@ li {
   font-size: 2.25rem;
   font-weight: bold;
 }
-.main__about.about__Price {
+.main__Price {
   margin: 0 calc(50% - 50vw);
   width: 100vw;
   background-color: #FAFAFA;
   padding: 3.75em 0;
 }
-.main__contnet__title {
+.main__Price__list {
+  width: 1230px;
+  height: 350px;
+  border: 1px solid #000;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main__Price .main__Price__list:nth-of-type(1) {
+  margin-top: 2.9375em;
+  margin-bottom: 2.1875em;
+}
+.main__Price .main__Price__list:nth-of-type(2) {
+  margin-top: 2.3125em;
+  margin-bottom: 1.0625em;
+}
+.main__access__box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding-top: 3.125em;
+  padding-bottom: 3.75em;
+}
+.main__access__information {
+  width: 30%;
+  text-align: left;
+  margin-right: 6.25em;
+}
+.main__access__map {
+  width: 50%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.main__content__title {
   font-size: 1.875rem;
   margin-top: 0.4666666667em;
   margin-bottom: 2em;
 }
-.main__contnet__title-sub {
-  font-size: 1.25rem;
+.main__content__title-sub {
+  font-size: 1rem;
 }
+.main__content .main__content__title-sub:nth-of-type(3) {
+  margin-top: 3em;
+  margin-bottom: 3.8em;
+}
+.main__content__view {
+  text-align: right;
+}
+
 /* base */
 /* index */
 /* about */
 /* color */
-/*# sourceMappingURL=style.css.map */
