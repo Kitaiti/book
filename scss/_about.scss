@@ -10,6 +10,7 @@
     &__text{
         text-align: center;
         font-size: 1rem;
+        color: #303030;
         &-sub{
             font-size: (36/16)+rem;
         }
@@ -19,30 +20,34 @@
 .Philosophy{
     // 背景画像
     &__bisual{
-        margin-right: 0;
-        margin-left: 0;
-        width: 100%;
-        background-image: url("../img/about/about_main.png");
-        background-repeat: no-repeat;
-        background-size: cover;
+        z-index:0;
+        overflow: hidden;
+        background-color: #faefcf;/*半透明カラーの色*/
+        opacity: 0.8;/*半透明カラーの透明度*/
         position: relative;
-
+        
         // ぼかしエフェクト
         &:before{
-        content: '';
-        background: inherit;
-        filter: blur(5px);
-        position: absolute;
-        // 画像の端までぼけてしまうため切り落とすため
-        top: -5px;
-        left: -5px;
-        right: -5px;
-        bottom: -5px;
-        z-index: -1;
+            content: '';
+            background: url('../img/about/about_main.png');/*背景画像のURL*/
+            width: 100%;
+            filter: blur(3px);/*ぼかし度*/
+            position: absolute;
+            /* 参考: http://designcolor-web.com/2016/09/14/css-blur-effects-background/*/
+            top: -8px;
+            left: -8px;
+            right: -8px;
+            bottom: -8px;
+            z-index: -1;
         }
     }
 
     &__inner{
         margin: (25em/16)
+    }
+
+    &__content{
+        padding: (60/16)+em (310/16)+em;
+        background-color: #F9F4EF;
     }
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   max-width: 100%;
   font-size: 16px;
@@ -198,33 +199,42 @@ p {
 .about__text {
   text-align: center;
   font-size: 1rem;
+  color: #303030;
 }
 .about__text-sub {
   font-size: 2.25rem;
 }
 
 .Philosophy__bisual {
-  margin-right: 0;
-  margin-left: 0;
-  width: 100%;
-  background-image: url("../img/about/about_main.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  z-index: 0;
+  overflow: hidden;
+  background-color: #faefcf;
+  /*半透明カラーの色*/
+  opacity: 0.8;
+  /*半透明カラーの透明度*/
   position: relative;
 }
 .Philosophy__bisual:before {
   content: "";
-  background: inherit;
-  filter: blur(5px);
+  background: url("../img/about/about_main.png");
+  /*背景画像のURL*/
+  width: 100%;
+  filter: blur(3px);
+  /*ぼかし度*/
   position: absolute;
-  top: -5px;
-  left: -5px;
-  right: -5px;
-  bottom: -5px;
+  /* 参考: http://designcolor-web.com/2016/09/14/css-blur-effects-background/*/
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
   z-index: -1;
 }
 .Philosophy__inner {
   margin: 1.5625em;
+}
+.Philosophy__content {
+  padding: 3.75em 19.375em;
+  background-color: #F9F4EF;
 }
 
 /* base */
