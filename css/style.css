@@ -150,14 +150,13 @@ p {
   background-image: url("../img/about/about_main.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
   position: relative;
 }
 .Philosophy__bisual:before {
   content: "";
   background: inherit;
   filter: blur(5px);
-  position: relative;
+  position: absolute;
   top: -5px;
   left: -5px;
   right: -5px;
