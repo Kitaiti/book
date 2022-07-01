@@ -1,0 +1,49 @@
+@use "./base/color" as color;
+// .about{
+//     // about
+//     &__inner{
+//         margin: (25em/16)
+//     }
+// }
+
+.about{
+    &__text{
+        text-align: center;
+        font-size: 1rem;
+        &-sub{
+            font-size: (36/16)+rem;
+        }
+    }
+}
+
+.Philosophy{
+    // 背景画像
+    &__bisual{
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;
+        background-image: url("../img/about/about_main.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+
+        // ぼかしエフェクト
+        &:before{
+        content: '';
+        background: inherit;
+        filter: blur(5px);
+        position: absolute;
+        // 画像の端までぼけてしまうため切り落とすため
+        top: -5px;
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+        z-index: -1;
+        }
+    }
+
+    &__inner{
+        margin: (25em/16)
+    }
+}
