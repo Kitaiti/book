@@ -296,6 +296,67 @@ p {
   text-align: left;
 }
 
+@media screen and (min-width: 415px) {
+  .main__thumbnail__price__visual {
+    max-width: 100%;
+    width: 100vw;
+  }
+  .main__rental {
+    margin-top: 1.875em;
+    padding-bottom: 1.875em;
+  }
+  .main__rental__calender {
+    margin: 1.875em 0;
+  }
+  .main__rental__calender__demo {
+    max-width: 100%;
+    width: 100vw;
+  }
+  .main__rental__fee {
+    margin-top: 1.875em;
+    border: 1px solid #000;
+    height: 104px;
+    max-width: 1230px;
+  }
+  .main__bookshelf {
+    margin: 0 calc(50% - 50vw);
+    padding-top: 1.875em;
+    padding-bottom: 2.5em;
+    background-color: #FFF8F2;
+  }
+  .main__bookshelf__about {
+    display: block;
+  }
+  .main__bookshelf__about__text {
+    font-size: 14px;
+    line-height: 2.5em;
+    margin: 0 2.7857142857em;
+    margin-bottom: 2.1428571429em;
+  }
+  .main__bookshelf__about__demo {
+    max-width: 100%;
+    padding: 0 1.5625em;
+    margin: 0;
+  }
+  .main__bookshelf__benefit {
+    height: 300px;
+    margin-top: 2.5em;
+    margin-bottom: 3.75em;
+  }
+  .main__bookshelf__fee {
+    margin: 0 1.5625em;
+    margin-top: 1.875em;
+    border: 1px solid #000;
+    height: 350px;
+    max-width: 100%;
+    max-height: 104px;
+  }
+  .main__price__title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+  }
+}
 /* base */
 /* index */
 /* about */
