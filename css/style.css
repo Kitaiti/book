@@ -255,11 +255,40 @@ p {
 .main__rental__fee {
   margin-top: 3.75em;
   border: 1px solid #000;
-  height: 21.875em;
+  height: 350px;
+  max-width: 1230px;
 }
 .main__bookshelf {
-  margin-top: 3.75em;
+  margin: 0 calc(50% - 50vw);
+  padding-top: 3.75em;
+  padding-bottom: 3.75em;
   background-color: #FFF8F2;
+}
+.main__bookshelf__about {
+  display: flex;
+  justify-content: center;
+}
+.main__bookshelf__about__text {
+  line-height: 2.1875em;
+  margin: 1.875em 5em 0;
+}
+.main__bookshelf__about__demo {
+  max-width: 600px;
+  max-width: 100%;
+  max-height: 500px;
+  height: 100%;
+  margin: auto 0;
+  margin-right: 1.5625em;
+}
+.main__bookshelf__benefit {
+  margin-top: 7.5em;
+}
+.main__bookshelf__fee {
+  margin: 0 1.5625em;
+  margin-top: 3.75em;
+  border: 1px solid #000;
+  height: 350px;
+  max-width: 1230px;
 }
 .main__price__title {
   font-size: 24px;

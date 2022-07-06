@@ -21,18 +21,30 @@
         &__fee{
             margin-top: (60em/16);
             border: 1px solid #000;
-            height: (350em/16);
+            height: 350px;
+            max-width: 1230px;
         }
     }
     &__bookshelf{
-        margin-top: (60em/16);
+        margin: 0 calc(50% - 50vw);
+        padding-top: (60em/16);
+        padding-bottom: (60em/16);
         background-color: #FFF8F2;
         &__about{
+            display: flex;
+            justify-content: center;
             &__text{
-
+                line-height: (35em/16);
+                margin: (30em/16) (80em/16) 0;
             }
             &__demo{
+                max-width: 600px;
+                max-width: 100%;
 
+                max-height: 500px;
+                height: 100%;
+                margin: auto 0;
+                margin-right: (25em/16);
             }
         }
         &__span__A{
@@ -76,6 +88,16 @@
             &-d{
                 
             }
+        }
+        &__benefit{
+            margin-top: (120em/16);
+        }
+        &__fee{
+            margin: 0 (25em/16);
+            margin-top: (60em/16);
+            border: 1px solid #000;
+            height: 350px;
+            max-width: 1230px;
         }
     }
     &__main__member{
