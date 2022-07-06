@@ -1,0 +1,92 @@
+.main{
+    &__inner{
+
+    }
+    &__thumbnail__price{
+        &__visual{
+            max-width: 100%;
+            width: 100vw;
+        }
+    }
+    &__rental{
+        margin-top: (60em/16);
+        padding-bottom: (60em/16);
+        &__calender{
+            margin: (60em/16) 0;
+            &__demo{
+                max-width: 100%;
+                width: 100vw;
+            }
+        }
+        &__fee{
+            margin-top: (60em/16);
+            border: 1px solid #000;
+            height: (350em/16);
+        }
+    }
+    &__bookshelf{
+        margin-top: (60em/16);
+        background-color: #FFF8F2;
+        &__about{
+            &__text{
+
+            }
+            &__demo{
+
+            }
+        }
+        &__span__A{
+            &-a{
+
+            }
+            &-b{
+                
+            }
+            &-c{
+                
+            }
+            &-d{
+                
+            }
+        }
+        &__span__B{
+            &-a{
+
+            }
+            &-b{
+                
+            }
+            &-c{
+                
+            }
+            &-d{
+                
+            }
+        }
+        &__span__C{
+            &-a{
+
+            }
+            &-b{
+                
+            }
+            &-c{
+                
+            }
+            &-d{
+                
+            }
+        }
+    }
+    &__main__member{
+        &__text{
+
+        }
+    }
+}
+
+.main__price__title{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+}
