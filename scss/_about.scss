@@ -13,11 +13,17 @@
         font-size: 1rem;
         color: #303030;
         margin-top: (60/16)+em;
+        @media screen and (max-width:450px) {
+            margin-top: (40/16)+em;
+        }
         &-sub{
             display: block;
             font-size: (36/16)+rem;
             margin: 5% 0;
             font-weight: bold;
+            @media screen and (max-width:450px) {
+                font-size: (24/16)+rem;
+            }
         }
     }
 }
@@ -87,7 +93,7 @@
         display: block;
         margin: 1.2em;
     }
-
+}
 
 
 
@@ -96,30 +102,18 @@
 // shop
 .shop{
     margin-top: (60/16)+em;
+    @media screen and (max-width:450px) {
+        margin-top: (40/16)+em;
+    }
     &__inner{
-
         width: 90%;
         margin: auto;
     }
 
-    &__exterior{
-        width: 100%;
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: space-between;
-        &-content{
+    &_image{
+        &-box{
             width: 50%;
-            padding: (40/16)+em;
         }
-
-        &-image{
-            display: block;
-            width: 50%;
-            height: auto;
-
-        width: 95%;
-        margin: 0 auto;
     }
 
     // exterior
@@ -128,6 +122,14 @@
         justify-content: space-between;
         align-items: center;
         flex-wrap: nowrap;
+        @media screen and (max-width:450px) {
+            width: 100%;
+        }
+
+        &-image{
+            display: block;
+            width: 100%;
+        }
 
         &-text{
             line-height: (40/16)+em;
@@ -135,16 +137,26 @@
                 font-size: (12/16)+rem;
                 line-height: (16/10)+em;
             }
-
         }
 
         &-title{
             font-size: (24/16)+rem;
-            margin-bottom: (70/16)+em;
+            margin-bottom: (50/16)+em;
+            @media screen and (max-width:450px) {
+                margin-bottom: (30/16)+em;
+            }
         }
 
         &-text{
             line-height: (20/16);
+        }
+
+        &-content{
+            width: 50%;
+            padding: 2em;
+            @media screen and (max-width:450px) {
+                padding: 1.5em;
+            }
         }
     }
 
@@ -162,7 +174,6 @@
                 font-size: (16/16)+rem;
             }
         }
-
         &-content{
             padding: 2em;
             width: 50%;
@@ -170,60 +181,13 @@
                 padding: 0.5em;
             }
         }
-
         &-image{
             display: block;
             width: 50%;
             height: auto;
-
         }
     }
-
-    // interior
-    &__interior{
-        justify-content: space-between;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: nowrap;
-
-        &-text{
-            line-height: (40/16)+em;
-            @media screen and (max-width:450px) {
-                font-size: (12/16)+rem;
-                line-height: (16/10)+em;
-            }
-        }
-
-        &-title{
-            font-size: (24/16)+rem;
-            margin-bottom: (70/16)+em;
-        }
-
-        &-text{
-            line-height: (20/16);
-        }
-    }
-            margin: 0 auto;
-            margin-bottom: 5%;
-            @media screen and (max-width:450px) {
-                font-size: (16/16)+rem;
-            }
-        }
-
-        &-content{
-            padding: 1em;
-            width: 50%;
-            @media screen and (max-width:450px) {
-                padding: 0.5em;
-            }
-        }
-
-        &-image{
-            display: block;
-            width: 50%;
-        }
-    }
+}
 
 
 // interview
@@ -239,10 +203,10 @@
     }
 
     &__content{
-
     margin-top: (60/16)+em;
     background-color: #FAFAFA;
     padding: (60/16)+em 0;
+}
 
     &__inner{
         margin: 0 auto;
@@ -252,12 +216,10 @@
 
     &__content{
         width: 100%;
-
         text-align: left;
     }
 
     &__question{
-
         padding-left: 5%;
         font-size: (25/16)+rem;
     }
@@ -300,6 +262,7 @@
         margin-bottom: (40/16)+em;
     }
 
+    &__title{
         font-weight: normal;
         margin-left: 10%;
         font-size: (30/16)+rem;
@@ -369,4 +332,4 @@
             line-height: (30/14);
         }
     }
-}}
+}
