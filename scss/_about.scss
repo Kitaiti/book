@@ -16,15 +16,8 @@
         &-sub{
             display: block;
             font-size: (36/16)+rem;
-
-
             margin: 5% 0;
-
             font-weight: bold;
-
-
-            font-weight: bold;
-
         }
     }
 }
@@ -45,10 +38,7 @@
             background: url('../img/about/about_main.png');/*背景画像のURL*/
             background-size: cover;
 
-
             background-repeat: no-repeat;
-
-
 
 
             width: 100%;
@@ -57,31 +47,22 @@
             background-repeat: no-repeat;
             /* 参考: http://designcolor-web.com/2016/09/14/css-blur-effects-background/*/
 
-
             top: -10px;
             left: -10px;
             right: -10px;
             bottom: -10px;
-
-
 
             top: -3px;
             left: -3px;
             right: -3px;
             bottom: -3px;
 
-
-
-
             z-index: -1;
         }
     }
 
     &__inner{
-        margin: (25/16)+em;
-        margin: (25em/16);
-        margin: (25em/16);
-
+        margin: (25/16)+em
     }
 
     &__content{
@@ -90,29 +71,32 @@
     }
 
 
-
     &__writing{
         &_style{
             &__day{
                 margin-bottom: 1em;
             }
-
             &__span{
                 margin: 3% 0;
                 display: block;
             }
         }
     }
+
     &_writing_style_space{
         display: block;
         margin: 1.2em;
     }
 
+
+
+
+
+
 // shop
 .shop{
     margin-top: (60/16)+em;
     &__inner{
-
 
         width: 90%;
         margin: auto;
@@ -134,8 +118,6 @@
             width: 50%;
             height: auto;
 
-
-
         width: 95%;
         margin: 0 auto;
     }
@@ -153,12 +135,11 @@
                 font-size: (12/16)+rem;
                 line-height: (16/10)+em;
             }
+
         }
 
         &-title{
             font-size: (24/16)+rem;
-
-
             margin-bottom: (70/16)+em;
         }
 
@@ -176,9 +157,6 @@
         &-content{
             width: 50%;
             padding: (40/16)+em;
-
-
-
             margin-bottom: 5%;
             @media screen and (max-width:414px) {
                 font-size: (16/16)+rem;
@@ -197,6 +175,7 @@
             display: block;
             width: 50%;
             height: auto;
+
         }
     }
 
@@ -218,8 +197,6 @@
 
         &-title{
             font-size: (24/16)+rem;
-
-
             margin-bottom: (70/16)+em;
         }
 
@@ -227,7 +204,6 @@
             line-height: (20/16);
         }
     }
-
             margin: 0 auto;
             margin-bottom: 5%;
             @media screen and (max-width:414px) {
@@ -252,6 +228,7 @@
 
 // interview
 .interview{
+
     background-color: #FAFAFA;
     margin-top: (60/16)+em;
     padding-top: (60/16)+em;
@@ -262,6 +239,7 @@
     }
 
     &__content{
+
     margin-top: (60/16)+em;
     background-color: #FAFAFA;
     padding: (60/16)+em 0;
@@ -275,14 +253,10 @@
     &__content{
         width: 100%;
 
-
-
-
         text-align: left;
     }
 
     &__question{
-
 
         padding-left: 5%;
         font-size: (25/16)+rem;
@@ -325,8 +299,6 @@
         flex-wrap: nowrap;
         margin-bottom: (40/16)+em;
     }
-
-
 
         font-weight: normal;
         margin-left: 10%;
@@ -397,5 +369,4 @@
             line-height: (30/14);
         }
     }
-}
 }
