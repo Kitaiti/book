@@ -242,7 +242,7 @@ p {
   width: 30%;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 450px) {
   .openbtn1 {
     display: block;
   }
@@ -332,13 +332,11 @@ p {
   font-size: 2.25rem;
   margin: 5% 0;
   font-weight: bold;
-  font-weight: bold;
 }
 
 .Philosophy__bisual {
   z-index: 0;
   overflow: hidden;
-  background-color: #faefcf; /*半透明カラーの色*/
   opacity: 0.8; /*半透明カラーの透明度*/
   position: relative;
   padding: 2% 10%;
@@ -350,8 +348,6 @@ p {
   background-repeat: no-repeat;
   width: 100%;
   filter: blur(8px); /*ぼかし度*/
-  width: 100%;
-  filter: blur(3px); /*ぼかし度*/
   position: absolute;
   background-repeat: no-repeat;
   /* 参考: http://designcolor-web.com/2016/09/14/css-blur-effects-background/*/
@@ -359,11 +355,6 @@ p {
   left: -10px;
   right: -10px;
   bottom: -10px;
-  width: 100%;
-  filter: blur(3px); /*ぼかし度*/
-  position: absolute;
-  background-repeat: no-repeat;
-  /* 参考: http://designcolor-web.com/2016/09/14/css-blur-effects-background/*/
   top: -3px;
   left: -3px;
   right: -3px;
@@ -384,247 +375,230 @@ p {
   margin: 3% 0;
   display: block;
 }
-
 .Philosophy_writing_style_space {
   display: block;
   margin: 1.2em;
 }
-.Philosophy_writing_style_space {
-  display: block;
-  margin: 1.2em;
-}
-
-.shop {
+.Philosophy .shop {
   margin-top: 3.75em;
 }
-.shop__inner {
+.Philosophy .shop__inner {
   width: 90%;
   margin: auto;
 }
-.shop__exterior {
+.Philosophy .shop__exterior {
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 5%;
 }
-.shop__exterior-content {
+.Philosophy .shop__exterior-content {
   width: 50%;
   padding: 2.5em;
+}
+.Philosophy .shop__exterior-image {
+  display: block;
+  width: 50%;
+  height: auto;
   width: 95%;
   margin: 0 auto;
 }
-.shop__exterior {
+.Philosophy .shop__exterior__exterior {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
 }
-.shop__exterior-text {
+.Philosophy .shop__exterior__exterior-text {
   line-height: 2.5em;
 }
-@media screen and (max-width: 414px) {
-  .shop__exterior-text {
+@media screen and (max-width: 450px) {
+  .Philosophy .shop__exterior__exterior-text {
     font-size: 0.75rem;
     line-height: 1.6em;
   }
 }
-.shop__exterior-title {
-  font-size: 1.5rem;
-  margin-bottom: 5%;
-}
-@media screen and (max-width: 414px) {
-  .shop__exterior-title {
-    font-size: 1rem;
-  }
-}
-.shop__exterior-content {
-  padding: 2em;
-  width: 50%;
-}
-@media screen and (max-width: 414px) {
-  .shop__exterior-content {
-    padding: 0.5em;
-  }
-}
-.shop__exterior-image {
-  display: block;
-  width: 50%;
-  height: auto;
-}
-.shop__exterior-title {
+.Philosophy .shop__exterior__exterior-title {
   font-size: 1.5rem;
   margin-bottom: 4.375em;
 }
-.shop__exterior-text {
+.Philosophy .shop__exterior__exterior-text {
   line-height: 1.25;
 }
-.shop__interior {
+.Philosophy .shop__exterior__interior {
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
 }
-.shop__interior-content {
+.Philosophy .shop__exterior__interior-content {
   width: 50%;
   padding: 2.5em;
+  margin-bottom: 5%;
 }
-.shop__interior {
+@media screen and (max-width: 450px) {
+  .Philosophy .shop__exterior__interior-content {
+    font-size: 1rem;
+  }
+}
+.Philosophy .shop__exterior__interior-content {
+  padding: 2em;
+  width: 50%;
+}
+@media screen and (max-width: 450px) {
+  .Philosophy .shop__exterior__interior-content {
+    padding: 0.5em;
+  }
+}
+.Philosophy .shop__exterior__interior-image {
+  display: block;
+  width: 50%;
+  height: auto;
+}
+.Philosophy .shop__exterior__interior {
   justify-content: space-between;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
 }
-.shop__interior-text {
+.Philosophy .shop__exterior__interior-text {
   line-height: 2.5em;
 }
-@media screen and (max-width: 414px) {
-  .shop__interior-text {
+@media screen and (max-width: 450px) {
+  .Philosophy .shop__exterior__interior-text {
     font-size: 0.75rem;
     line-height: 1.6em;
   }
 }
-.shop__interior-title {
-  font-size: 1.5rem;
-  margin: 0 auto;
-  margin-bottom: 5%;
-}
-@media screen and (max-width: 414px) {
-  .shop__interior-title {
-    font-size: 1rem;
-  }
-}
-.shop__interior-content {
-  padding: 1em;
-  width: 50%;
-}
-@media screen and (max-width: 414px) {
-  .shop__interior-content {
-    padding: 0.5em;
-  }
-}
-.shop__interior-image {
-  display: block;
-  width: 50%;
-  height: auto;
-}
-.shop__interior-title {
+.Philosophy .shop__exterior__interior-title {
   font-size: 1.5rem;
   margin-bottom: 4.375em;
 }
-.shop__interior-text {
+.Philosophy .shop__exterior__interior-text {
   line-height: 1.25;
 }
-
-.interview {
+@media screen and (max-width: 450px) {
+  .Philosophy .shop__exterior {
+    font-size: 1rem;
+  }
+}
+.Philosophy .shop-content {
+  padding: 1em;
+  width: 50%;
+}
+@media screen and (max-width: 450px) {
+  .Philosophy .shop-content {
+    padding: 0.5em;
+  }
+}
+.Philosophy .shop-image {
+  display: block;
+  width: 50%;
+}
+.Philosophy .interview {
   background-color: #FAFAFA;
   margin-top: 3.75em;
   padding-top: 3.75em;
   padding-bottom: 5em;
 }
-.interview__inner {
+.Philosophy .interview__inner {
   width: 90%;
   margin: auto;
 }
-.interview__content {
+.Philosophy .interview__content {
+  margin-top: 3.75em;
+  background-color: #FAFAFA;
+  padding: 3.75em 0;
+}
+.Philosophy .interview__content__inner {
+  margin: 0 auto;
+  width: 95%;
+}
+.Philosophy .interview__content__content {
+  width: 100%;
   text-align: left;
 }
-.interview__question {
+.Philosophy .interview__content__question {
   padding-left: 5%;
   font-size: 1.5625rem;
 }
-.interview__box {
+.Philosophy .interview__content__box {
   margin: 2.5em 0 3.75em 0;
   width: 80%;
   display: flex;
   align-items: flex-end;
 }
-.interview__image {
+.Philosophy .interview__content__image {
   width: 10%;
   height: auto;
 }
-.interview__answer {
+.Philosophy .interview__content__answer {
   font-size: 1.25rem;
   margin-left: 2%;
 }
-
-.events {
+.Philosophy .interview .events {
   margin: 3.75em;
+  font-weight: normal;
+  margin-left: 10%;
+  font-size: 1.875rem;
+  margin-bottom: 1.25em;
 }
-.events__inner {
+.Philosophy .interview .events__inner {
   width: 90%;
   margin: auto;
 }
-.events__image {
+.Philosophy .interview .events__image {
   display: block;
   width: 32%;
 }
-.events__box {
+.Philosophy .interview .events__box {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
   margin-bottom: 2.5em;
 }
-
-.interview {
-  margin-top: 3.75em;
-  background-color: #FAFAFA;
-  padding: 3.75em 0;
-}
-.interview__inner {
-  margin: 0 auto;
-  width: 95%;
-}
-.interview__content {
-  width: 100%;
-  text-align: left;
-}
-.interview__question {
-  font-weight: normal;
-  margin-left: 10%;
-  font-size: 1.875rem;
-  margin-bottom: 1.25em;
-}
-@media screen and (max-width: 414px) {
-  .interview__question {
+@media screen and (max-width: 450px) {
+  .Philosophy .interview .events {
     font-size: 1.125rem;
   }
 }
-.interview__image {
+.Philosophy .interview__image {
   display: block;
   width: 8%;
 }
-@media screen and (max-width: 414px) {
-  .interview__image {
+@media screen and (max-width: 450px) {
+  .Philosophy .interview__image {
     width: 15%;
   }
 }
-.interview__answer {
+.Philosophy .interview__answer {
   margin-left: 2%;
   font-size: 1.5625em;
 }
-@media screen and (max-width: 414px) {
-  .interview__answer {
+@media screen and (max-width: 450px) {
+  .Philosophy .interview__answer {
     font-size: 1.125rem;
   }
 }
-.interview__box {
+.Philosophy .interview__box {
   align-items: flex-end;
   display: flex;
   margin-bottom: 6.25em;
 }
-
-.events {
+.Philosophy .events {
   margin: 3.75em 0;
 }
-.events__inner {
+.Philosophy .events__inner {
   width: 80%;
   margin: auto;
 }
-.events__content {
+.Philosophy .events__content {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -632,28 +606,28 @@ p {
   width: 100%;
   margin-bottom: 3.125em;
 }
-@media screen and (max-width: 414px) {
-  .events__content {
+@media screen and (max-width: 450px) {
+  .Philosophy .events__content {
     display: block;
   }
 }
-.events__img {
+.Philosophy .events__img {
   display: block;
   width: 30%;
 }
-@media screen and (max-width: 414px) {
-  .events__img {
+@media screen and (max-width: 450px) {
+  .Philosophy .events__img {
     width: 100%;
     margin-bottom: 10%;
   }
 }
-.events__text {
+.Philosophy .events__text {
   width: 80%;
   margin: auto;
   line-height: 1.875;
 }
-@media screen and (max-width: 414px) {
-  .events__text {
+@media screen and (max-width: 450px) {
+  .Philosophy .events__text {
     line-height: 2.1428571429;
   }
 }
