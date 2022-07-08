@@ -35,6 +35,11 @@ img {
   width: 40%;
   align-items: baseline;
 }
+@media screen and (max-width: 414px) {
+  .header__nav.nav {
+    display: none;
+  }
+}
 .header__nav.nav .nav__gnav {
   display: flex;
   flex-wrap: nowrap;
@@ -68,6 +73,10 @@ p {
 .footer__sns .main__content__title:nth-of-type(1) {
   margin-top: 0;
   margin-bottom: 1.6666666667em;
+}
+.footer__sns__text {
+  width: 90%;
+  margin: auto;
 }
 .footer .sns {
   display: flex;
@@ -127,6 +136,117 @@ p {
   color: #FFFFFF;
 }
 
+.mainblur {
+  background-color: #fff;
+  filter: blur(8px);
+}
+
+#g-nav {
+  position: fixed;
+  z-index: -1;
+  opacity: 0; /*はじめは透過０*/
+  top: 0;
+  width: 100%;
+  height: 100vh; /*ナビの高さ*/
+  background: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s;
+}
+
+/* panelaactiveのクラスがついたら透過無しで最前面 */
+#g-nav.panelactive {
+  opacity: 1;
+  z-index: 998;
+}
+
+/* ナビゲーション */
+#g-nav ul {
+  display: none;
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#g-nav.panelactive ul {
+  display: block;
+}
+
+/* リストのレイアウト */
+#g-nav li {
+  list-style: none;
+  text-align: center;
+}
+
+#g-nav li a {
+  color: #dfa081;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+/* ボタンのためのCSS */
+.openbtn1 {
+  display: none;
+  position: fixed;
+  z-index: 999; /*最前面*/
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+
+/* ☓に変化 */
+.openbtn1 span {
+  display: inline-block;
+  transition: all 0.4s;
+  position: absolute;
+  left: 14px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #dfa081;
+  width: 45%;
+}
+
+.openbtn1 span:nth-of-type(1) {
+  top: 15px;
+}
+
+.openbtn1 span:nth-of-type(2) {
+  top: 23px;
+}
+
+.openbtn1 span:nth-of-type(3) {
+  top: 31px;
+}
+
+.openbtn1.active span:nth-of-type(1) {
+  top: 18px;
+  left: 18px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 30%;
+}
+
+.openbtn1.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.openbtn1.active span:nth-of-type(3) {
+  top: 30px;
+  left: 18px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 30%;
+}
+
+@media screen and (max-width: 414px) {
+  .openbtn1 {
+    display: block;
+  }
+}
 .main__thumbnail {
   margin: 0 calc(50% - 50vw);
   width: 100vw;
@@ -205,33 +325,55 @@ p {
   text-align: center;
   font-size: 1rem;
   color: #303030;
+  margin-top: 3.75em;
 }
 .about__text-sub {
   display: block;
   font-size: 2.25rem;
+<<<<<<< Updated upstream
   margin: 5% 0;
+=======
+  font-weight: bold;
+>>>>>>> Stashed changes
 }
 
 .Philosophy__bisual {
   z-index: 0;
   overflow: hidden;
+<<<<<<< Updated upstream
   background-color: #faefcf; /*半透明カラーの色*/
+=======
+>>>>>>> Stashed changes
   opacity: 0.8; /*半透明カラーの透明度*/
   position: relative;
+  padding: 2% 10%;
 }
 .Philosophy__bisual:before {
   content: "";
   background: url("../img/about/about_main.png"); /*背景画像のURL*/
   background-size: cover;
+<<<<<<< Updated upstream
   background-repeat: no-repeat;
   width: 100%;
   filter: blur(8px); /*ぼかし度*/
+=======
+  width: 100%;
+  filter: blur(3px); /*ぼかし度*/
+>>>>>>> Stashed changes
   position: absolute;
+  background-repeat: no-repeat;
   /* 参考: http://designcolor-web.com/2016/09/14/css-blur-effects-background/*/
+<<<<<<< Updated upstream
   top: -10px;
   left: -10px;
   right: -10px;
   bottom: -10px;
+=======
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+>>>>>>> Stashed changes
   z-index: -1;
 }
 .Philosophy__inner {
@@ -241,18 +383,25 @@ p {
   padding: 3.75em;
   background-color: #F9F4EF;
 }
+<<<<<<< Updated upstream
 .Philosophy__writing_style__day {
   margin-bottom: 1em;
 }
 .Philosophy__writing_style__span {
   margin: 3% 0;
   display: block;
+=======
+.Philosophy_writing_style_space {
+  display: block;
+  margin: 1.2em;
+>>>>>>> Stashed changes
 }
 
 .shop {
   margin-top: 3.75em;
 }
 .shop__inner {
+<<<<<<< Updated upstream
   width: 90%;
   margin: auto;
 }
@@ -266,10 +415,48 @@ p {
 .shop__exterior-content {
   width: 50%;
   padding: 2.5em;
+=======
+  width: 95%;
+  margin: 0 auto;
+}
+.shop__exterior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.shop__exterior-text {
+  line-height: 2.5em;
+}
+@media screen and (max-width: 414px) {
+  .shop__exterior-text {
+    font-size: 0.75rem;
+    line-height: 1.6em;
+  }
+}
+.shop__exterior-title {
+  font-size: 1.5rem;
+  margin-bottom: 5%;
+}
+@media screen and (max-width: 414px) {
+  .shop__exterior-title {
+    font-size: 1rem;
+  }
+}
+.shop__exterior-content {
+  padding: 2em;
+  width: 50%;
+}
+@media screen and (max-width: 414px) {
+  .shop__exterior-content {
+    padding: 0.5em;
+  }
+>>>>>>> Stashed changes
 }
 .shop__exterior-image {
   display: block;
   width: 50%;
+<<<<<<< Updated upstream
   height: auto;
 }
 .shop__exterior-title {
@@ -289,10 +476,48 @@ p {
 .shop__interior-content {
   width: 50%;
   padding: 2.5em;
+=======
+}
+.shop__interior {
+  justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.shop__interior-text {
+  line-height: 2.5em;
+}
+@media screen and (max-width: 414px) {
+  .shop__interior-text {
+    font-size: 0.75rem;
+    line-height: 1.6em;
+  }
+}
+.shop__interior-title {
+  font-size: 1.5rem;
+  margin: 0 auto;
+  margin-bottom: 5%;
+}
+@media screen and (max-width: 414px) {
+  .shop__interior-title {
+    font-size: 1rem;
+  }
+}
+.shop__interior-content {
+  padding: 1em;
+  width: 50%;
+}
+@media screen and (max-width: 414px) {
+  .shop__interior-content {
+    padding: 0.5em;
+  }
+>>>>>>> Stashed changes
 }
 .shop__interior-image {
   display: block;
   width: 50%;
+<<<<<<< Updated upstream
   height: auto;
 }
 .shop__interior-title {
@@ -352,6 +577,97 @@ p {
   align-items: center;
   flex-wrap: nowrap;
   margin-bottom: 2.5em;
+=======
+}
+
+.interview {
+  margin-top: 3.75em;
+  background-color: #FAFAFA;
+  padding: 3.75em 0;
+}
+.interview__inner {
+  margin: 0 auto;
+  width: 95%;
+}
+.interview__content {
+  width: 100%;
+  text-align: left;
+}
+.interview__question {
+  font-weight: normal;
+  margin-left: 10%;
+  font-size: 1.875rem;
+  margin-bottom: 1.25em;
+}
+@media screen and (max-width: 414px) {
+  .interview__question {
+    font-size: 1.125rem;
+  }
+}
+.interview__image {
+  display: block;
+  width: 8%;
+}
+@media screen and (max-width: 414px) {
+  .interview__image {
+    width: 15%;
+  }
+}
+.interview__answer {
+  margin-left: 2%;
+  font-size: 1.5625em;
+}
+@media screen and (max-width: 414px) {
+  .interview__answer {
+    font-size: 1.125rem;
+  }
+}
+.interview__box {
+  align-items: flex-end;
+  display: flex;
+  margin-bottom: 6.25em;
+}
+
+.events {
+  margin: 3.75em 0;
+}
+.events__inner {
+  width: 80%;
+  margin: auto;
+}
+.events__content {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 3.125em;
+}
+@media screen and (max-width: 414px) {
+  .events__content {
+    display: block;
+  }
+}
+.events__img {
+  display: block;
+  width: 30%;
+}
+@media screen and (max-width: 414px) {
+  .events__img {
+    width: 100%;
+    margin-bottom: 10%;
+  }
+}
+.events__text {
+  width: 80%;
+  margin: auto;
+  line-height: 1.875;
+}
+@media screen and (max-width: 414px) {
+  .events__text {
+    line-height: 2.1428571429;
+  }
+>>>>>>> Stashed changes
 }
 
 /* base */

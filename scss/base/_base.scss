@@ -50,6 +50,9 @@ img{
     &__nav.nav{
         width: 40%;
         align-items: baseline;
+        @media screen and (max-width:414px) {
+            display: none;
+        }
         .nav{
             &__gnav{
                 display: flex;
@@ -92,6 +95,10 @@ p{
         .main__content__title:nth-of-type(1){
             margin-top: 0;
             margin-bottom: (50em/30);
+        }
+        &__text{
+            width: 90%;
+            margin: auto;
         }
     }
     .sns{
@@ -162,5 +169,121 @@ p{
 
     .copyright{
         color: #FFFFFF;
+    }
+}
+
+
+// hunberger
+
+.mainblur{
+    background-color: #fff;
+    filter: blur(8px);
+}
+
+#g-nav{
+    position: fixed;
+    z-index: -1;
+    opacity: 0;/*はじめは透過０*/
+    top: 0;
+    width: 100%;
+    height: 100vh;/*ナビの高さ*/
+    background: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s;
+}
+
+/* panelaactiveのクラスがついたら透過無しで最前面 */
+#g-nav.panelactive{
+    opacity: 1;
+    z-index: 998;
+}
+
+/* ナビゲーション */
+#g-nav ul{
+    display: none;
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#g-nav.panelactive ul{
+    display: block;
+}
+
+/* リストのレイアウト */
+#g-nav li{
+    list-style: none;
+    text-align: center;
+}
+
+#g-nav li a{
+    color: #dfa081;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+}
+
+/* ボタンのためのCSS */
+.openbtn1{
+    display: none;
+    position: fixed;
+    z-index: 999;/*最前面*/
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+
+/* ☓に変化 */
+.openbtn1 span{
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #dfa081;
+    width: 45%;
+}
+
+.openbtn1 span:nth-of-type(1){
+    top: 15px;
+}
+
+.openbtn1 span:nth-of-type(2){
+    top: 23px;
+}
+
+.openbtn1 span:nth-of-type(3){
+    top: 31px;
+}
+
+.openbtn1.active span:nth-of-type(1){
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+}
+
+.openbtn1.active span:nth-of-type(2){
+    opacity: 0;
+}
+
+.openbtn1.active span:nth-of-type(3){
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+}
+
+// SmartPhone
+@media screen and (max-width:414px) {
+    .openbtn1{
+        display: block;
     }
 }
