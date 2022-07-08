@@ -131,7 +131,7 @@
 
         &-text{
             line-height: (40/16)+em;
-            @media screen and (max-width:414px) {
+            @media screen and (max-width:430px) {
                 font-size: (12/16)+rem;
                 line-height: (16/10)+em;
             }
@@ -158,7 +158,7 @@
             width: 50%;
             padding: (40/16)+em;
             margin-bottom: 5%;
-            @media screen and (max-width:414px) {
+            @media screen and (max-width:430px) {
                 font-size: (16/16)+rem;
             }
         }
@@ -166,7 +166,7 @@
         &-content{
             padding: 2em;
             width: 50%;
-            @media screen and (max-width:414px) {
+            @media screen and (max-width:430px) {
                 padding: 0.5em;
             }
         }
@@ -189,7 +189,7 @@
 
         &-text{
             line-height: (40/16)+em;
-            @media screen and (max-width:414px) {
+            @media screen and (max-width:430px) {
                 font-size: (12/16)+rem;
                 line-height: (16/10)+em;
             }
@@ -206,7 +206,7 @@
     }
             margin: 0 auto;
             margin-bottom: 5%;
-            @media screen and (max-width:414px) {
+            @media screen and (max-width:430px) {
                 font-size: (16/16)+rem;
             }
         }
@@ -214,7 +214,7 @@
         &-content{
             padding: 1em;
             width: 50%;
-            @media screen and (max-width:414px) {
+            @media screen and (max-width:430px) {
                 padding: 0.5em;
             }
         }
@@ -304,7 +304,7 @@
         margin-left: 10%;
         font-size: (30/16)+rem;
         margin-bottom: (20/16)+em;
-        @media screen and (max-width:414px) {
+        @media screen and (max-width:430px) {
             font-size: (18/16)+rem;
         }
     }
@@ -312,7 +312,7 @@
     &__image{
         display: block;
         width: 8%;
-        @media screen and (max-width:414px) {
+        @media screen and (max-width:430px) {
             width: 15%;
         }
     }
@@ -320,7 +320,7 @@
     &__answer{
         margin-left: 2%;
         font-size: (25/16)+em;
-        @media screen and (max-width:414px) {
+        @media screen and (max-width:430px) {
             font-size: (18/16)+rem;
         }
     }
@@ -347,7 +347,7 @@
         justify-content: space-between;
         width: 100%;
         margin-bottom: (50/16)+em;
-        @media screen and (max-width:414px) {
+        @media screen and (max-width:430px) {
             display: block;
         }
     }
@@ -355,7 +355,7 @@
     &__img{
         display: block;
         width: 30%;
-        @media screen and (max-width:414px) {
+        @media screen and (max-width:430px) {
             width: 100%;
             margin-bottom: 10%;
         }
@@ -365,7 +365,7 @@
         width: 80%;
         margin: auto;
         line-height: (30/16);
-        @media screen and (max-width:414px) {
+        @media screen and (max-width:430px) {
             line-height: (30/14);
         }
     }
