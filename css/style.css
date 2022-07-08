@@ -330,20 +330,15 @@ p {
 .about__text-sub {
   display: block;
   font-size: 2.25rem;
-<<<<<<< Updated upstream
   margin: 5% 0;
-=======
   font-weight: bold;
->>>>>>> Stashed changes
+  font-weight: bold;
 }
 
 .Philosophy__bisual {
   z-index: 0;
   overflow: hidden;
-<<<<<<< Updated upstream
   background-color: #faefcf; /*半透明カラーの色*/
-=======
->>>>>>> Stashed changes
   opacity: 0.8; /*半透明カラーの透明度*/
   position: relative;
   padding: 2% 10%;
@@ -352,28 +347,27 @@ p {
   content: "";
   background: url("../img/about/about_main.png"); /*背景画像のURL*/
   background-size: cover;
-<<<<<<< Updated upstream
   background-repeat: no-repeat;
   width: 100%;
   filter: blur(8px); /*ぼかし度*/
-=======
   width: 100%;
   filter: blur(3px); /*ぼかし度*/
->>>>>>> Stashed changes
   position: absolute;
   background-repeat: no-repeat;
   /* 参考: http://designcolor-web.com/2016/09/14/css-blur-effects-background/*/
-<<<<<<< Updated upstream
   top: -10px;
   left: -10px;
   right: -10px;
   bottom: -10px;
-=======
+  width: 100%;
+  filter: blur(3px); /*ぼかし度*/
+  position: absolute;
+  background-repeat: no-repeat;
+  /* 参考: http://designcolor-web.com/2016/09/14/css-blur-effects-background/*/
   top: -3px;
   left: -3px;
   right: -3px;
   bottom: -3px;
->>>>>>> Stashed changes
   z-index: -1;
 }
 .Philosophy__inner {
@@ -383,25 +377,27 @@ p {
   padding: 3.75em;
   background-color: #F9F4EF;
 }
-<<<<<<< Updated upstream
 .Philosophy__writing_style__day {
   margin-bottom: 1em;
 }
 .Philosophy__writing_style__span {
   margin: 3% 0;
   display: block;
-=======
+}
+
 .Philosophy_writing_style_space {
   display: block;
   margin: 1.2em;
->>>>>>> Stashed changes
+}
+.Philosophy_writing_style_space {
+  display: block;
+  margin: 1.2em;
 }
 
 .shop {
   margin-top: 3.75em;
 }
 .shop__inner {
-<<<<<<< Updated upstream
   width: 90%;
   margin: auto;
 }
@@ -415,7 +411,6 @@ p {
 .shop__exterior-content {
   width: 50%;
   padding: 2.5em;
-=======
   width: 95%;
   margin: 0 auto;
 }
@@ -451,12 +446,10 @@ p {
   .shop__exterior-content {
     padding: 0.5em;
   }
->>>>>>> Stashed changes
 }
 .shop__exterior-image {
   display: block;
   width: 50%;
-<<<<<<< Updated upstream
   height: auto;
 }
 .shop__exterior-title {
@@ -476,7 +469,6 @@ p {
 .shop__interior-content {
   width: 50%;
   padding: 2.5em;
-=======
 }
 .shop__interior {
   justify-content: space-between;
@@ -512,12 +504,10 @@ p {
   .shop__interior-content {
     padding: 0.5em;
   }
->>>>>>> Stashed changes
 }
 .shop__interior-image {
   display: block;
   width: 50%;
-<<<<<<< Updated upstream
   height: auto;
 }
 .shop__interior-title {
@@ -577,7 +567,6 @@ p {
   align-items: center;
   flex-wrap: nowrap;
   margin-bottom: 2.5em;
-=======
 }
 
 .interview {
@@ -667,7 +656,6 @@ p {
   .events__text {
     line-height: 2.1428571429;
   }
->>>>>>> Stashed changes
 }
 
 /* base */
