@@ -69,6 +69,7 @@ p {
   background-color: #FAFAFA;
   margin: 0 calc(50% - 50vw);
   padding: 3.75em 0;
+  padding-top: 2.5em;
 }
 .footer__sns .main__content__title:nth-of-type(1) {
   margin-top: 0;
@@ -82,14 +83,14 @@ p {
   display: flex;
   justify-content: center;
 }
-.footer .sns__list:nth-of-type(1) {
-  margin-right: 5.84375em;
-}
-.footer .sns__list:nth-of-type(2) {
-  margin-left: 5.84375em;
-}
 .footer .sns:nth-of-type(1) {
   margin: 3.125em 0;
+}
+.footer .sns:nth-of-type(1) .sns__list:nth-of-type(1) {
+  margin-right: 5.84375em;
+}
+.footer .sns:nth-of-type(1) .sns__list:nth-of-type(2) {
+  margin-left: 5.84375em;
 }
 .footer .sns:nth-of-type(2) {
   margin: 0 4.625em 0 0;
@@ -135,6 +136,7 @@ p {
 .footer .copyright {
   color: #FFFFFF;
 }
+
 
 .mainblur {
   background-color: #fff;
@@ -242,9 +244,94 @@ p {
   width: 30%;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (min-width: 415px) {
   .openbtn1 {
     display: block;
+  }
+  .footer {
+    background-color: #474747;
+  }
+  .footer__inner {
+    margin: 0 1.5625em;
+    padding-bottom: 1.875em;
+  }
+  .footer__sns {
+    background-color: #FAFAFA;
+    margin: 0 calc(50% - 50vw);
+    padding: 2.5em 0;
+  }
+  .footer__sns .main__content__title:nth-of-type(1) {
+    margin-top: 0;
+    margin-bottom: 1.6666666667em;
+  }
+  .footer__sns__text {
+    padding: 0 4.5625em;
+  }
+  .footer .sns {
+    display: flex;
+    justify-content: center;
+  }
+  .footer ul.sns:nth-of-type(1) {
+    margin-top: 2.5em;
+    margin-bottom: 3.125em;
+  }
+  .footer ul.sns:nth-of-type(1) .sns__list:nth-of-type(1) {
+    margin-right: 5.84375em;
+  }
+  .footer ul.sns:nth-of-type(1) .sns__list:nth-of-type(2) {
+    margin-left: 5.84375em;
+  }
+  .footer ul.sns:nth-of-type(2) {
+    margin: 0;
+  }
+  .footer ul.sns:nth-of-type(2) li.sns__list:nth-of-type(1) {
+    margin-right: 1.25em;
+  }
+  .footer ul.sns:nth-of-type(2) li.sns__:nth-of-type(2) {
+    margin-left: 1.25em;
+  }
+  .footer__nav {
+    color: #FFFFFF;
+    padding: 3.75em 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .footer__logo {
+    max-width: 237px;
+    width: 100%;
+    text-align: center;
+    margin: auto 0;
+  }
+  .footer .nav {
+    max-width: 72px;
+    width: 100%;
+  }
+  .footer .nav__gnav {
+    display: block;
+    margin: 0;
+  }
+  .footer .nav__gnav__list {
+    font-size: 12px;
+  }
+  .footer .nav__gnav__list:nth-of-type(1) {
+    margin-right: 0;
+    margin-bottom: 1.6875em;
+  }
+  .footer .nav__gnav__list:nth-of-type(2) {
+    margin: 1.6875em 0;
+  }
+  .footer .nav__gnav__list:nth-of-type(3) {
+    margin-left: 0;
+    margin-top: 1.6875em;
+  }
+  .footer__address {
+    width: 50%;
+    font-size: 12px;
+    text-align: left;
+  }
+  .footer .copyright {
+    color: #FFFFFF;
   }
 }
 .main__thumbnail {
@@ -330,20 +417,17 @@ p {
 .about__text-sub {
   display: block;
   font-size: 2.25rem;
-<<<<<<< Updated upstream
   margin: 5% 0;
-=======
+
   font-weight: bold;
->>>>>>> Stashed changes
+
 }
 
 .Philosophy__bisual {
   z-index: 0;
   overflow: hidden;
-<<<<<<< Updated upstream
+
   background-color: #faefcf; /*半透明カラーの色*/
-=======
->>>>>>> Stashed changes
   opacity: 0.8; /*半透明カラーの透明度*/
   position: relative;
   padding: 2% 10%;
@@ -352,28 +436,22 @@ p {
   content: "";
   background: url("../img/about/about_main.png"); /*背景画像のURL*/
   background-size: cover;
-<<<<<<< Updated upstream
   background-repeat: no-repeat;
   width: 100%;
   filter: blur(8px); /*ぼかし度*/
-=======
   width: 100%;
   filter: blur(3px); /*ぼかし度*/
->>>>>>> Stashed changes
   position: absolute;
   background-repeat: no-repeat;
   /* 参考: http://designcolor-web.com/2016/09/14/css-blur-effects-background/*/
-<<<<<<< Updated upstream
   top: -10px;
   left: -10px;
   right: -10px;
   bottom: -10px;
-=======
   top: -3px;
   left: -3px;
   right: -3px;
   bottom: -3px;
->>>>>>> Stashed changes
   z-index: -1;
 }
 .Philosophy__inner {
@@ -383,25 +461,18 @@ p {
   padding: 3.75em;
   background-color: #F9F4EF;
 }
-<<<<<<< Updated upstream
 .Philosophy__writing_style__day {
   margin-bottom: 1em;
 }
-.Philosophy__writing_style__span {
-  margin: 3% 0;
-  display: block;
-=======
 .Philosophy_writing_style_space {
   display: block;
   margin: 1.2em;
->>>>>>> Stashed changes
 }
 
 .shop {
   margin-top: 3.75em;
 }
 .shop__inner {
-<<<<<<< Updated upstream
   width: 90%;
   margin: auto;
 }
@@ -415,7 +486,6 @@ p {
 .shop__exterior-content {
   width: 50%;
   padding: 2.5em;
-=======
   width: 95%;
   margin: 0 auto;
 }
@@ -451,12 +521,10 @@ p {
   .shop__exterior-content {
     padding: 0.5em;
   }
->>>>>>> Stashed changes
 }
 .shop__exterior-image {
   display: block;
   width: 50%;
-<<<<<<< Updated upstream
   height: auto;
 }
 .shop__exterior-title {
@@ -476,7 +544,6 @@ p {
 .shop__interior-content {
   width: 50%;
   padding: 2.5em;
-=======
 }
 .shop__interior {
   justify-content: space-between;
@@ -512,12 +579,10 @@ p {
   .shop__interior-content {
     padding: 0.5em;
   }
->>>>>>> Stashed changes
 }
 .shop__interior-image {
   display: block;
   width: 50%;
-<<<<<<< Updated upstream
   height: auto;
 }
 .shop__interior-title {
@@ -577,7 +642,6 @@ p {
   align-items: center;
   flex-wrap: nowrap;
   margin-bottom: 2.5em;
-=======
 }
 
 .interview {
@@ -602,6 +666,12 @@ p {
 @media screen and (max-width: 414px) {
   .interview__question {
     font-size: 1.125rem;
+  }
+  h4.main__content__title:nth-child(3) {
+    margin-bottom: 1em;
+  }
+  h4.main__content__title:nth-child(4) {
+    margin-top: 1.3333333333em;
   }
 }
 .interview__image {
@@ -667,7 +737,6 @@ p {
   .events__text {
     line-height: 2.1428571429;
   }
->>>>>>> Stashed changes
 }
 
 /* base */
