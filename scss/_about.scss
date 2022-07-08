@@ -8,11 +8,14 @@
 
 .about{
     &__text{
+        width: 100%;
         text-align: center;
         font-size: 1rem;
         color: #303030;
         &-sub{
+            display: block;
             font-size: (36/16)+rem;
+            margin: 5% 0;
         }
     }
 }
@@ -30,24 +33,161 @@
         &:before{
             content: '';
             background: url('../img/about/about_main.png');/*背景画像のURL*/
+            background-size: cover;
+            background-repeat: no-repeat;
             width: 100%;
-            filter: blur(3px);/*ぼかし度*/
+            filter: blur(8px);/*ぼかし度*/
             position: absolute;
             /* 参考: http://designcolor-web.com/2016/09/14/css-blur-effects-background/*/
-            top: -8px;
-            left: -8px;
-            right: -8px;
-            bottom: -8px;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
             z-index: -1;
         }
     }
 
     &__inner{
-        margin: (25em/16)
+        margin: (25/16)+em
     }
 
     &__content{
-        padding: (60/16)+em (310/16)+em;
+        padding: (60/16)+em;
         background-color: #F9F4EF;
+    }
+
+    &__writing{
+        &_style{
+            &__day{
+                margin-bottom: 1em;
+            }
+
+            &__span{
+                margin: 3% 0;
+                display: block;
+            }
+        }
+    }
+}
+
+// shop
+.shop{
+    margin-top: (60/16)+em;
+    &__inner{
+        width: 90%;
+        margin: auto;
+    }
+
+    &__exterior{
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        &-content{
+            width: 50%;
+            padding: (40/16)+em;
+        }
+
+        &-image{
+            display: block;
+            width: 50%;
+            height: auto;
+        }
+
+        &-title{
+            font-size: (24/16)+rem;
+            margin-bottom: (70/16)+em;
+        }
+
+        &-text{
+            line-height: (20/16);
+        }
+    }
+
+    &__interior{
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        &-content{
+            width: 50%;
+            padding: (40/16)+em;
+        }
+
+        &-image{
+            display: block;
+            width: 50%;
+            height: auto;
+        }
+
+        &-title{
+            font-size: (24/16)+rem;
+            margin-bottom: (70/16)+em;
+        }
+
+        &-text{
+            line-height: (20/16);
+        }
+    }
+}
+
+// interview
+.interview{
+    background-color: #FAFAFA;
+    margin-top: (60/16)+em;
+    padding-top: (60/16)+em;
+    padding-bottom: (80/16)+em;
+    &__inner{
+        width: 90%;
+        margin: auto;
+    }
+
+    &__content{
+        text-align: left;
+    }
+
+    &__question{
+        padding-left: 5%;
+        font-size: (25/16)+rem;
+    }
+
+    &__box{
+        margin: (40/16)+em 0 (60/16)+em 0;
+        width: 80%;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__image{
+        width: 10%;
+        height: auto;
+    }
+
+    &__answer{
+        font-size: (20/16)+rem;
+        margin-left: 2%;
+    }
+}
+
+.events{
+    margin: (60/16)+em;
+    &__inner{
+        width: 90%;
+        margin: auto;
+    }
+
+    &__image{
+        display: block;
+        width: 32%;
+    }
+
+    &__box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin-bottom: (40/16)+em;
     }
 }
