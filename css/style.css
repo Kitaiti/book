@@ -137,7 +137,6 @@ p {
   color: #FFFFFF;
 }
 
-
 .mainblur {
   background-color: #fff;
   filter: blur(8px);
@@ -244,7 +243,7 @@ p {
   width: 30%;
 }
 
-@media screen and (min-width: 415px) {
+@media screen and (max-width: 415px) {
   .openbtn1 {
     display: block;
   }
@@ -353,26 +352,19 @@ p {
   font-size: 2.25rem;
   font-weight: bold;
 }
-.main__Price {
-  margin: 0 calc(50% - 50vw);
-  width: 100vw;
-  background-color: #FAFAFA;
-  padding: 3.75em 0;
+.main__sensation {
+  height: 1183px;
 }
-.main__Price__list {
-  width: 1230px;
-  height: 350px;
-  border: 1px solid #000;
-  margin-left: auto;
-  margin-right: auto;
+.main__sensation .main__circle {
+  position: relative;
+  width: 100%;
 }
-.main__Price .main__Price__list:nth-of-type(1) {
-  margin-top: 2.9375em;
-  margin-bottom: 2.1875em;
+.main__sensation .circle-box {
+  position: relative;
+  margin: 0 auto;
 }
-.main__Price .main__Price__list:nth-of-type(2) {
-  margin-top: 2.3125em;
-  margin-bottom: 1.0625em;
+.main__sensation .item {
+  position: absolute;
 }
 .main__access__box {
   display: flex;
@@ -407,338 +399,12 @@ p {
   text-align: right;
 }
 
-.about__text {
-  width: 100%;
-  text-align: center;
-  font-size: 1rem;
-  color: #303030;
-  margin-top: 3.75em;
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /*　画面サイズが768pxから1024pxまではここを読み込む　*/
 }
-.about__text-sub {
-  display: block;
-  font-size: 2.25rem;
-  margin: 5% 0;
-
-  font-weight: bold;
-
+@media screen and (max-width: 429px) {
+  /*　画面サイズが428pxまではここを読み込む　*/
 }
-
-.Philosophy__bisual {
-  z-index: 0;
-  overflow: hidden;
-
-  background-color: #faefcf; /*半透明カラーの色*/
-  opacity: 0.8; /*半透明カラーの透明度*/
-  position: relative;
-  padding: 2% 10%;
-}
-.Philosophy__bisual:before {
-  content: "";
-  background: url("../img/about/about_main.png"); /*背景画像のURL*/
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  filter: blur(8px); /*ぼかし度*/
-  width: 100%;
-  filter: blur(3px); /*ぼかし度*/
-  position: absolute;
-  background-repeat: no-repeat;
-  /* 参考: http://designcolor-web.com/2016/09/14/css-blur-effects-background/*/
-  top: -10px;
-  left: -10px;
-  right: -10px;
-  bottom: -10px;
-  top: -3px;
-  left: -3px;
-  right: -3px;
-  bottom: -3px;
-  z-index: -1;
-}
-.Philosophy__inner {
-  margin: 1.5625em;
-}
-.Philosophy__content {
-  padding: 3.75em;
-  background-color: #F9F4EF;
-}
-.Philosophy__writing_style__day {
-  margin-bottom: 1em;
-}
-.Philosophy_writing_style_space {
-  display: block;
-  margin: 1.2em;
-}
-
-.shop {
-  margin-top: 3.75em;
-}
-.shop__inner {
-  width: 90%;
-  margin: auto;
-}
-.shop__exterior {
-  width: 100%;
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: space-between;
-}
-.shop__exterior-content {
-  width: 50%;
-  padding: 2.5em;
-  width: 95%;
-  margin: 0 auto;
-}
-.shop__exterior {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
-}
-.shop__exterior-text {
-  line-height: 2.5em;
-}
-@media screen and (max-width: 414px) {
-  .shop__exterior-text {
-    font-size: 0.75rem;
-    line-height: 1.6em;
-  }
-}
-.shop__exterior-title {
-  font-size: 1.5rem;
-  margin-bottom: 5%;
-}
-@media screen and (max-width: 414px) {
-  .shop__exterior-title {
-    font-size: 1rem;
-  }
-}
-.shop__exterior-content {
-  padding: 2em;
-  width: 50%;
-}
-@media screen and (max-width: 414px) {
-  .shop__exterior-content {
-    padding: 0.5em;
-  }
-}
-.shop__exterior-image {
-  display: block;
-  width: 50%;
-  height: auto;
-}
-.shop__exterior-title {
-  font-size: 1.5rem;
-  margin-bottom: 4.375em;
-}
-.shop__exterior-text {
-  line-height: 1.25;
-}
-.shop__interior {
-  width: 100%;
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: space-between;
-}
-.shop__interior-content {
-  width: 50%;
-  padding: 2.5em;
-}
-.shop__interior {
-  justify-content: space-between;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
-}
-.shop__interior-text {
-  line-height: 2.5em;
-}
-@media screen and (max-width: 414px) {
-  .shop__interior-text {
-    font-size: 0.75rem;
-    line-height: 1.6em;
-  }
-}
-.shop__interior-title {
-  font-size: 1.5rem;
-  margin: 0 auto;
-  margin-bottom: 5%;
-}
-@media screen and (max-width: 414px) {
-  .shop__interior-title {
-    font-size: 1rem;
-  }
-}
-.shop__interior-content {
-  padding: 1em;
-  width: 50%;
-}
-@media screen and (max-width: 414px) {
-  .shop__interior-content {
-    padding: 0.5em;
-  }
-}
-.shop__interior-image {
-  display: block;
-  width: 50%;
-  height: auto;
-}
-.shop__interior-title {
-  font-size: 1.5rem;
-  margin-bottom: 4.375em;
-}
-.shop__interior-text {
-  line-height: 1.25;
-}
-
-.interview {
-  background-color: #FAFAFA;
-  margin-top: 3.75em;
-  padding-top: 3.75em;
-  padding-bottom: 5em;
-}
-.interview__inner {
-  width: 90%;
-  margin: auto;
-}
-.interview__content {
-  text-align: left;
-}
-.interview__question {
-  padding-left: 5%;
-  font-size: 1.5625rem;
-}
-.interview__box {
-  margin: 2.5em 0 3.75em 0;
-  width: 80%;
-  display: flex;
-  align-items: flex-end;
-}
-.interview__image {
-  width: 10%;
-  height: auto;
-}
-.interview__answer {
-  font-size: 1.25rem;
-  margin-left: 2%;
-}
-
-.events {
-  margin: 3.75em;
-}
-.events__inner {
-  width: 90%;
-  margin: auto;
-}
-.events__image {
-  display: block;
-  width: 32%;
-}
-.events__box {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
-  margin-bottom: 2.5em;
-}
-
-.interview {
-  margin-top: 3.75em;
-  background-color: #FAFAFA;
-  padding: 3.75em 0;
-}
-.interview__inner {
-  margin: 0 auto;
-  width: 95%;
-}
-.interview__content {
-  width: 100%;
-  text-align: left;
-}
-.interview__question {
-  font-weight: normal;
-  margin-left: 10%;
-  font-size: 1.875rem;
-  margin-bottom: 1.25em;
-}
-@media screen and (max-width: 414px) {
-  .interview__question {
-    font-size: 1.125rem;
-  }
-  h4.main__content__title:nth-child(3) {
-    margin-bottom: 1em;
-  }
-  h4.main__content__title:nth-child(4) {
-    margin-top: 1.3333333333em;
-  }
-}
-.interview__image {
-  display: block;
-  width: 8%;
-}
-@media screen and (max-width: 414px) {
-  .interview__image {
-    width: 15%;
-  }
-}
-.interview__answer {
-  margin-left: 2%;
-  font-size: 1.5625em;
-}
-@media screen and (max-width: 414px) {
-  .interview__answer {
-    font-size: 1.125rem;
-  }
-}
-.interview__box {
-  align-items: flex-end;
-  display: flex;
-  margin-bottom: 6.25em;
-}
-
-.events {
-  margin: 3.75em 0;
-}
-.events__inner {
-  width: 80%;
-  margin: auto;
-}
-.events__content {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  margin-bottom: 3.125em;
-}
-@media screen and (max-width: 414px) {
-  .events__content {
-    display: block;
-  }
-}
-.events__img {
-  display: block;
-  width: 30%;
-}
-@media screen and (max-width: 414px) {
-  .events__img {
-    width: 100%;
-    margin-bottom: 10%;
-  }
-}
-.events__text {
-  width: 80%;
-  margin: auto;
-  line-height: 1.875;
-}
-@media screen and (max-width: 414px) {
-  .events__text {
-    line-height: 2.1428571429;
-  }
-}
-
 /* base */
 /* index */
 /* about */

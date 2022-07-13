@@ -1,397 +1,397 @@
-@use "./base/color" as color;
+// @use "./base/color" as color;
+// // .about{
+// //     // about
+// //     &__inner{
+// //         margin: (25em/16)
+// //     }
+// // }
+
 // .about{
-//     // about
-//     &__inner{
-//         margin: (25em/16)
+//     &__text{
+//         width: 100%;
+//         text-align: center;
+//         font-size: 1rem;
+//         color: #303030;
+//         margin-top: (60/16)+em;
+//         &-sub{
+//             display: block;
+//             font-size: (36/16)+rem;
+// <<<<<<< Updated upstream
+//             margin: 5% 0;
+// =======
+//             font-weight: bold;
+// >>>>>>> Stashed changes
+//         }
 //     }
 // }
 
-.about{
-    &__text{
-        width: 100%;
-        text-align: center;
-        font-size: 1rem;
-        color: #303030;
-        margin-top: (60/16)+em;
-        &-sub{
-            display: block;
-            font-size: (36/16)+rem;
-<<<<<<< Updated upstream
-            margin: 5% 0;
-=======
-            font-weight: bold;
->>>>>>> Stashed changes
-        }
-    }
-}
-
-.Philosophy{
-    // 背景画像
-    &__bisual{
-        z-index:0;
-        overflow: hidden;
-        // background-color: #faefcf;/*半透明カラーの色*/
-        opacity: 0.8;/*半透明カラーの透明度*/
-        position: relative;
-        padding: 2% 10%;
+// .Philosophy{
+//     // 背景画像
+//     &__bisual{
+//         z-index:0;
+//         overflow: hidden;
+//         // background-color: #faefcf;/*半透明カラーの色*/
+//         opacity: 0.8;/*半透明カラーの透明度*/
+//         position: relative;
+//         padding: 2% 10%;
         
-        // ぼかしエフェクト
-        &:before{
-            content: '';
-            background: url('../img/about/about_main.png');/*背景画像のURL*/
-            background-size: cover;
-<<<<<<< Updated upstream
-            background-repeat: no-repeat;
-=======
->>>>>>> Stashed changes
-            width: 100%;
-            filter: blur(8px);/*ぼかし度*/
-            position: absolute;
-            background-repeat: no-repeat;
-            /* 参考: http://designcolor-web.com/2016/09/14/css-blur-effects-background/*/
-<<<<<<< Updated upstream
-            top: -10px;
-            left: -10px;
-            right: -10px;
-            bottom: -10px;
-=======
-            top: -3px;
-            left: -3px;
-            right: -3px;
-            bottom: -3px;
->>>>>>> Stashed changes
-            z-index: -1;
-        }
-    }
+//         // ぼかしエフェクト
+//         &:before{
+//             content: '';
+//             background: url('../img/about/about_main.png');/*背景画像のURL*/
+//             background-size: cover;
+// <<<<<<< Updated upstream
+//             background-repeat: no-repeat;
+// =======
+// >>>>>>> Stashed changes
+//             width: 100%;
+//             filter: blur(8px);/*ぼかし度*/
+//             position: absolute;
+//             background-repeat: no-repeat;
+//             /* 参考: http://designcolor-web.com/2016/09/14/css-blur-effects-background/*/
+// <<<<<<< Updated upstream
+//             top: -10px;
+//             left: -10px;
+//             right: -10px;
+//             bottom: -10px;
+// =======
+//             top: -3px;
+//             left: -3px;
+//             right: -3px;
+//             bottom: -3px;
+// >>>>>>> Stashed changes
+//             z-index: -1;
+//         }
+//     }
 
-    &__inner{
-<<<<<<< Updated upstream
-        margin: (25/16)+em
-=======
-        margin: (25em/16);
->>>>>>> Stashed changes
-    }
+//     &__inner{
+// <<<<<<< Updated upstream
+//         margin: (25/16)+em
+// =======
+//         margin: (25em/16);
+// >>>>>>> Stashed changes
+//     }
 
-    &__content{
-        padding: (60/16)+em;
-        background-color: #F9F4EF;
-    }
+//     &__content{
+//         padding: (60/16)+em;
+//         background-color: #F9F4EF;
+//     }
 
-<<<<<<< Updated upstream
-    &__writing{
-        &_style{
-            &__day{
-                margin-bottom: 1em;
-            }
+// <<<<<<< Updated upstream
+//     &__writing{
+//         &_style{
+//             &__day{
+//                 margin-bottom: 1em;
+//             }
 
-            &__span{
-                margin: 3% 0;
-                display: block;
-            }
-        }
-    }
-}
+//             &__span{
+//                 margin: 3% 0;
+//                 display: block;
+//             }
+//         }
+//     }
+// }
 
-=======
-    &_writing_style_space{
-        display: block;
-        margin: 1.2em;
-    }
-}
+// =======
+//     &_writing_style_space{
+//         display: block;
+//         margin: 1.2em;
+//     }
+// }
 
 
->>>>>>> Stashed changes
-// shop
-.shop{
-    margin-top: (60/16)+em;
-    &__inner{
-<<<<<<< Updated upstream
-        width: 90%;
-        margin: auto;
-    }
+// >>>>>>> Stashed changes
+// // shop
+// .shop{
+//     margin-top: (60/16)+em;
+//     &__inner{
+// <<<<<<< Updated upstream
+//         width: 90%;
+//         margin: auto;
+//     }
 
-    &__exterior{
-        width: 100%;
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: space-between;
-        &-content{
-            width: 50%;
-            padding: (40/16)+em;
-        }
+//     &__exterior{
+//         width: 100%;
+//         display: flex;
+//         flex-wrap: nowrap;
+//         align-items: center;
+//         justify-content: space-between;
+//         &-content{
+//             width: 50%;
+//             padding: (40/16)+em;
+//         }
 
-        &-image{
-            display: block;
-            width: 50%;
-            height: auto;
-=======
-        width: 95%;
-        margin: 0 auto;
-    }
+//         &-image{
+//             display: block;
+//             width: 50%;
+//             height: auto;
+// =======
+//         width: 95%;
+//         margin: 0 auto;
+//     }
 
-    // exterior
-    &__exterior{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: nowrap;
+//     // exterior
+//     &__exterior{
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+//         flex-wrap: nowrap;
 
-        &-text{
-            line-height: (40/16)+em;
-            @media screen and (max-width:414px) {
-                font-size: (12/16)+rem;
-                line-height: (16/10)+em;
-            }
->>>>>>> Stashed changes
-        }
+//         &-text{
+//             line-height: (40/16)+em;
+//             @media screen and (max-width:414px) {
+//                 font-size: (12/16)+rem;
+//                 line-height: (16/10)+em;
+//             }
+// >>>>>>> Stashed changes
+//         }
 
-        &-title{
-            font-size: (24/16)+rem;
-<<<<<<< Updated upstream
-            margin-bottom: (70/16)+em;
-        }
+//         &-title{
+//             font-size: (24/16)+rem;
+// <<<<<<< Updated upstream
+//             margin-bottom: (70/16)+em;
+//         }
 
-        &-text{
-            line-height: (20/16);
-        }
-    }
+//         &-text{
+//             line-height: (20/16);
+//         }
+//     }
 
-    &__interior{
-        width: 100%;
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: space-between;
-        &-content{
-            width: 50%;
-            padding: (40/16)+em;
-=======
-            margin-bottom: 5%;
-            @media screen and (max-width:414px) {
-                font-size: (16/16)+rem;
-            }
-        }
+//     &__interior{
+//         width: 100%;
+//         display: flex;
+//         flex-wrap: nowrap;
+//         align-items: center;
+//         justify-content: space-between;
+//         &-content{
+//             width: 50%;
+//             padding: (40/16)+em;
+// =======
+//             margin-bottom: 5%;
+//             @media screen and (max-width:414px) {
+//                 font-size: (16/16)+rem;
+//             }
+//         }
 
-        &-content{
-            padding: 2em;
-            width: 50%;
-            @media screen and (max-width:414px) {
-                padding: 0.5em;
-            }
->>>>>>> Stashed changes
-        }
+//         &-content{
+//             padding: 2em;
+//             width: 50%;
+//             @media screen and (max-width:414px) {
+//                 padding: 0.5em;
+//             }
+// >>>>>>> Stashed changes
+//         }
 
-        &-image{
-            display: block;
-            width: 50%;
-<<<<<<< Updated upstream
-            height: auto;
-=======
-        }
-    }
+//         &-image{
+//             display: block;
+//             width: 50%;
+// <<<<<<< Updated upstream
+//             height: auto;
+// =======
+//         }
+//     }
 
-    // interior
-    &__interior{
-        justify-content: space-between;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: nowrap;
+//     // interior
+//     &__interior{
+//         justify-content: space-between;
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+//         flex-wrap: nowrap;
 
-        &-text{
-            line-height: (40/16)+em;
-            @media screen and (max-width:414px) {
-                font-size: (12/16)+rem;
-                line-height: (16/10)+em;
-            }
->>>>>>> Stashed changes
-        }
+//         &-text{
+//             line-height: (40/16)+em;
+//             @media screen and (max-width:414px) {
+//                 font-size: (12/16)+rem;
+//                 line-height: (16/10)+em;
+//             }
+// >>>>>>> Stashed changes
+//         }
 
-        &-title{
-            font-size: (24/16)+rem;
-<<<<<<< Updated upstream
-            margin-bottom: (70/16)+em;
-        }
+//         &-title{
+//             font-size: (24/16)+rem;
+// <<<<<<< Updated upstream
+//             margin-bottom: (70/16)+em;
+//         }
 
-        &-text{
-            line-height: (20/16);
-        }
-    }
-=======
-            margin: 0 auto;
-            margin-bottom: 5%;
-            @media screen and (max-width:414px) {
-                font-size: (16/16)+rem;
-            }
-        }
+//         &-text{
+//             line-height: (20/16);
+//         }
+//     }
+// =======
+//             margin: 0 auto;
+//             margin-bottom: 5%;
+//             @media screen and (max-width:414px) {
+//                 font-size: (16/16)+rem;
+//             }
+//         }
 
-        &-content{
-            padding: 1em;
-            width: 50%;
-            @media screen and (max-width:414px) {
-                padding: 0.5em;
-            }
-        }
+//         &-content{
+//             padding: 1em;
+//             width: 50%;
+//             @media screen and (max-width:414px) {
+//                 padding: 0.5em;
+//             }
+//         }
 
-        &-image{
-            display: block;
-            width: 50%;
-        }
-    }
+//         &-image{
+//             display: block;
+//             width: 50%;
+//         }
+//     }
 
     
->>>>>>> Stashed changes
-}
+// >>>>>>> Stashed changes
+// }
 
-// interview
-.interview{
-<<<<<<< Updated upstream
-    background-color: #FAFAFA;
-    margin-top: (60/16)+em;
-    padding-top: (60/16)+em;
-    padding-bottom: (80/16)+em;
-    &__inner{
-        width: 90%;
-        margin: auto;
-    }
+// // interview
+// .interview{
+// <<<<<<< Updated upstream
+//     background-color: #FAFAFA;
+//     margin-top: (60/16)+em;
+//     padding-top: (60/16)+em;
+//     padding-bottom: (80/16)+em;
+//     &__inner{
+//         width: 90%;
+//         margin: auto;
+//     }
 
-    &__content{
-=======
-    margin-top: (60/16)+em;
-    background-color: #FAFAFA;
-    padding: (60/16)+em 0;
+//     &__content{
+// =======
+//     margin-top: (60/16)+em;
+//     background-color: #FAFAFA;
+//     padding: (60/16)+em 0;
 
-    &__inner{
-        margin: 0 auto;
-        width: 95%;
-    }
+//     &__inner{
+//         margin: 0 auto;
+//         width: 95%;
+//     }
 
 
-    &__content{
-        width: 100%;
->>>>>>> Stashed changes
-        text-align: left;
-    }
+//     &__content{
+//         width: 100%;
+// >>>>>>> Stashed changes
+//         text-align: left;
+//     }
 
-    &__question{
-<<<<<<< Updated upstream
-        padding-left: 5%;
-        font-size: (25/16)+rem;
-    }
+//     &__question{
+// <<<<<<< Updated upstream
+//         padding-left: 5%;
+//         font-size: (25/16)+rem;
+//     }
 
-    &__box{
-        margin: (40/16)+em 0 (60/16)+em 0;
-        width: 80%;
-        display: flex;
-        align-items: flex-end;
-    }
+//     &__box{
+//         margin: (40/16)+em 0 (60/16)+em 0;
+//         width: 80%;
+//         display: flex;
+//         align-items: flex-end;
+//     }
 
-    &__image{
-        width: 10%;
-        height: auto;
-    }
+//     &__image{
+//         width: 10%;
+//         height: auto;
+//     }
 
-    &__answer{
-        font-size: (20/16)+rem;
-        margin-left: 2%;
-    }
-}
+//     &__answer{
+//         font-size: (20/16)+rem;
+//         margin-left: 2%;
+//     }
+// }
 
-.events{
-    margin: (60/16)+em;
-    &__inner{
-        width: 90%;
-        margin: auto;
-    }
+// .events{
+//     margin: (60/16)+em;
+//     &__inner{
+//         width: 90%;
+//         margin: auto;
+//     }
 
-    &__image{
-        display: block;
-        width: 32%;
-    }
+//     &__image{
+//         display: block;
+//         width: 32%;
+//     }
 
-    &__box{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: nowrap;
-        margin-bottom: (40/16)+em;
-    }
-=======
-        font-weight: normal;
-        margin-left: 10%;
-        font-size: (30/16)+rem;
-        margin-bottom: (20/16)+em;
-        @media screen and (max-width:414px) {
-            font-size: (18/16)+rem;
-        }
-    }
+//     &__box{
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+//         flex-wrap: nowrap;
+//         margin-bottom: (40/16)+em;
+//     }
+// =======
+//         font-weight: normal;
+//         margin-left: 10%;
+//         font-size: (30/16)+rem;
+//         margin-bottom: (20/16)+em;
+//         @media screen and (max-width:414px) {
+//             font-size: (18/16)+rem;
+//         }
+//     }
 
-    &__image{
-        display: block;
-        width: 8%;
-        @media screen and (max-width:414px) {
-            width: 15%;
-        }
-    }
+//     &__image{
+//         display: block;
+//         width: 8%;
+//         @media screen and (max-width:414px) {
+//             width: 15%;
+//         }
+//     }
 
-    &__answer{
-        margin-left: 2%;
-        font-size: (25/16)+em;
-        @media screen and (max-width:414px) {
-            font-size: (18/16)+rem;
-        }
-    }
+//     &__answer{
+//         margin-left: 2%;
+//         font-size: (25/16)+em;
+//         @media screen and (max-width:414px) {
+//             font-size: (18/16)+rem;
+//         }
+//     }
 
-    &__box{
-        align-items: flex-end;
-        display: flex;
-        margin-bottom: (100/16)+em;
-    }
-}
+//     &__box{
+//         align-items: flex-end;
+//         display: flex;
+//         margin-bottom: (100/16)+em;
+//     }
+// }
 
-// events
-.events{
-    margin: (60/16)+em 0;
-    &__inner{
-        width: 80%;
-        margin: auto;
-    }
+// // events
+// .events{
+//     margin: (60/16)+em 0;
+//     &__inner{
+//         width: 80%;
+//         margin: auto;
+//     }
 
-    &__content{
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        margin-bottom: (50/16)+em;
-        @media screen and (max-width:414px) {
-            display: block;
-        }
-    }
+//     &__content{
+//         display: flex;
+//         flex-wrap: nowrap;
+//         align-items: center;
+//         justify-content: space-between;
+//         width: 100%;
+//         margin-bottom: (50/16)+em;
+//         @media screen and (max-width:414px) {
+//             display: block;
+//         }
+//     }
 
-    &__img{
-        display: block;
-        width: 30%;
-        @media screen and (max-width:414px) {
-            width: 100%;
-            margin-bottom: 10%;
-        }
-    }
+//     &__img{
+//         display: block;
+//         width: 30%;
+//         @media screen and (max-width:414px) {
+//             width: 100%;
+//             margin-bottom: 10%;
+//         }
+//     }
 
-    &__text{
-        width: 80%;
-        margin: auto;
-        line-height: (30/16);
-        @media screen and (max-width:414px) {
-            line-height: (30/14);
-        }
-    }
-}
+//     &__text{
+//         width: 80%;
+//         margin: auto;
+//         line-height: (30/16);
+//         @media screen and (max-width:414px) {
+//             line-height: (30/14);
+//         }
+//     }
+// }
 
-// SmartPhone
-@media screen and (max-width:414px) {
+// // SmartPhone
+// @media screen and (max-width:414px) {
     
     
->>>>>>> Stashed changes
-}
+// >>>>>>> Stashed changes
+// }

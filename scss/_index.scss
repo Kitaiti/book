@@ -31,28 +31,20 @@
         }
     }
 
-    &__Price{
-        margin: 0 calc(50% - 50vw);
-        width: 100vw;
-        background-color: color.$color-price-base;
-        padding: (60em/16) 0;
-        &__title{
+    &__sensation{
+        height: 1183px;
+        .main__circle {
+            position: relative;
+            width: 100%;
         }
-        &__list{
-            width: 1230px;
-            height: 350px;
-            border: 1px solid #000;
-            margin-left: auto;
-            margin-right: auto;
+        .circle-box {
+            position: relative;
+            margin: 0 auto;
         }
-        .main__Price__list:nth-of-type(1){
-            margin-top: (47em/16);
-            margin-bottom: (35em/16);
+        .item {
+            position: absolute;
         }
-        .main__Price__list:nth-of-type(2){
-            margin-top: (37em/16);
-            margin-bottom: (17em/16);
-        }
+        
     }
     &__access{
         &__box{
@@ -101,3 +93,15 @@
     }
 }
 
+
+
+// タブレット
+@media screen and (min-width:768px) and ( max-width:1024px) {
+    /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+}
+
+// スマホ
+@media screen and (max-width:429px) { 
+    /*　画面サイズが428pxまではここを読み込む　*/
+    
+}
