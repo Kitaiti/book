@@ -243,9 +243,7 @@ p {
   width: 30%;
 }
 
-
 @media screen and (max-width: 429px) {
-
   .openbtn1 {
     display: block;
   }
@@ -404,9 +402,17 @@ p {
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   /*　画面サイズが768pxから1024pxまではここを読み込む　*/
 }
-
 @media screen and (max-width: 429px) {
   /*　画面サイズが428pxまではここを読み込む　*/
+}
+.about__text {
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  color: #303030;
+  margin-top: 3.75em;
+}
+@media screen and (max-width: 428px) {
   .about__text {
     margin-top: 2.5em;
   }
@@ -417,7 +423,7 @@ p {
   margin: 5% 0;
   font-weight: bold;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 428px) {
   .about__text-sub {
     font-size: 1.5rem;
   }
@@ -472,7 +478,7 @@ p {
 .shop {
   margin-top: 3.75em;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 428px) {
   .shop {
     margin-top: 2.5em;
   }
@@ -490,7 +496,7 @@ p {
   align-items: center;
   flex-wrap: nowrap;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 428px) {
   .shop__exterior {
     width: 100%;
   }
@@ -502,7 +508,7 @@ p {
 .shop__exterior-text {
   line-height: 1.5;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 428px) {
   .shop__exterior-text {
     font-size: 0.875rem;
     line-height: 1.4;
@@ -512,7 +518,7 @@ p {
   font-size: 1.5rem;
   margin-bottom: 4%;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 428px) {
   .shop__exterior-title {
     margin-bottom: 0.625em;
     font-size: 1.125rem;
@@ -522,7 +528,7 @@ p {
   width: 50%;
   padding-right: 2%;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 428px) {
   .shop__exterior-content {
     padding-right: 0.7em;
   }
@@ -534,7 +540,7 @@ p {
   align-items: center;
   justify-content: space-between;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 428px) {
   .shop__interior-text {
     font-size: 0.75rem;
   }
@@ -543,7 +549,7 @@ p {
   font-size: 1.5rem;
   margin-bottom: 3%;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 428px) {
   .shop__interior-title {
     margin-bottom: 0.625em;
     font-size: 1rem;
@@ -553,7 +559,7 @@ p {
   width: 50%;
   padding-left: 2%;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 428px) {
   .shop__interior-content {
     font-size: 1rem;
     width: 50%;
@@ -582,7 +588,7 @@ p {
   margin-top: 3.75em;
   background-color: #FAFAFA;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 428px) {
   .interview__content {
     padding: 0;
   }
@@ -596,6 +602,12 @@ p {
   font-size: 1.5625rem;
   margin-bottom: 2.5em;
 }
+@media screen and (max-width: 428px) {
+  .interview__question {
+    font-size: 1.125rem;
+    margin-bottom: 1.875em;
+  }
+}
 .interview__box {
   display: flex;
   align-items: flex-end;
@@ -604,7 +616,7 @@ p {
 .interview__box-img {
   width: 12%;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 428px) {
   .interview__box-img {
     width: 20%;
   }
@@ -613,7 +625,7 @@ p {
   width: 100%;
   height: auto;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 428px) {
   .interview__image {
     width: 100%;
   }
@@ -623,16 +635,17 @@ p {
   font-size: 1.5rem;
   margin-left: 2%;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 428px) {
   .interview__answer {
     margin-left: 5%;
+    font-size: 1.125rem;
   }
 }
 
 .events {
   margin: 3.75em;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 428px) {
   .events {
     margin: 2.5rem;
   }
@@ -648,7 +661,7 @@ p {
   flex-wrap: nowrap;
   margin-bottom: 2.5em;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 428px) {
   .events__box {
     display: block;
   }
@@ -659,7 +672,7 @@ p {
   font-size: 1.875rem;
   margin-bottom: 1.25em;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 428px) {
   .events__title {
     font-size: 1.125rem;
   }
@@ -668,66 +681,156 @@ p {
   display: block;
   width: 30%;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 428px) {
   .events__image {
-    width: 100%;
-    margin-bottom: 1.875em;
+    width: 80%;
+    margin: 0 auto 1.875em auto;
   }
 }
 .events__answer {
   margin-left: 2%;
   font-size: 1.5625em;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 428px) {
   .events__answer {
     font-size: 1.125rem;
   }
 }
 
-.events__box {
-  align-items: flex-end;
-  display: flex;
-  margin-bottom: 6.25em;
+.main__inner {
+  width: 90%;
+  margin: auto;
 }
-
-.events {
+.main__thumbnail__price__visual {
+  max-width: 100%;
+  width: 100vw;
+}
+.main__rental {
+  margin-top: 3.75em;
+  padding-bottom: 3.75em;
+}
+.main__rental__calender {
   margin: 3.75em 0;
 }
-.events__inner {
-  width: 80%;
-  margin: auto;
+.main__rental__calender__demo {
+  max-width: 100%;
+  width: 100vw;
 }
-.events__content {
+.main__rental__fee {
+  margin-top: 3.75em;
+  border: 1px solid #000;
+  height: 350px;
+  max-width: 1230px;
+}
+.main__bookshelf {
+  margin: 0 calc(50% - 50vw);
+  padding-top: 3.75em;
+  padding-bottom: 3.75em;
+  background-color: #FFF8F2;
+}
+.main__bookshelf__about {
   display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  margin-bottom: 3.125em;
+  justify-content: center;
 }
-@media screen and (max-width: 450px) {
-  .events__content {
+.main__bookshelf__about__text {
+  line-height: 2.1875em;
+  margin: 1.875em 5em 0;
+}
+.main__bookshelf__about__demo {
+  max-width: 600px;
+  max-width: 100%;
+  max-height: 500px;
+  height: 100%;
+  margin: auto 0;
+  margin-right: 1.5625em;
+}
+@media screen and (max-width: 428px) {
+  .main__bookshelf__about__demo {
+    margin-right: 0;
+  }
+}
+.main__bookshelf__benefit {
+  margin-top: 7.5em;
+}
+.main__bookshelf__fee {
+  margin: 0 1.5625em;
+  margin-top: 3.75em;
+  border: 1px solid #000;
+  height: 350px;
+  max-width: 1230px;
+}
+.main__price__title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+}
+
+@media screen and (max-width: 415px) {
+  .main__thumbnail__price__visual {
+    max-width: 100%;
+    width: 100vw;
+  }
+  .main__rental {
+    margin-top: 1.875em;
+    padding-bottom: 1.875em;
+  }
+  .main__rental__calender {
+    margin: 1.875em 0;
+  }
+  .main__rental__calender__demo {
+    max-width: 100%;
+    width: 100vw;
+  }
+  .main__rental__fee {
+    margin-top: 1.875em;
+    border: 1px solid #000;
+    height: 104px;
+    max-width: 1230px;
+  }
+  .main__bookshelf {
+    margin: 0 calc(50% - 50vw);
+    padding-top: 1.875em;
+    padding-bottom: 2.5em;
+    background-color: #FFF8F2;
+  }
+  .main__bookshelf__about {
     display: block;
   }
-}
-.events__img {
-  display: block;
-  width: 30%;
-}
-@media screen and (max-width: 450px) {
-  .events__img {
-    width: 100%;
-    margin-bottom: 10%;
+  .main__bookshelf__about__text {
+    font-size: 14px;
+    line-height: 2.5em;
+    margin: 0 2.7857142857em;
+    margin-bottom: 2.1428571429em;
+    line-height: 2;
   }
-}
-.events__text {
-  width: 80%;
-  margin: auto;
-  line-height: 1.875;
-}
-@media screen and (max-width: 450px) {
-  .events__text {
-    line-height: 2.1428571429;
+  .main__bookshelf__about__demo {
+    max-width: 100%;
+    padding: 0 1.5625em;
+    margin: 0;
+  }
+  .main__bookshelf__benefit {
+    height: 300px;
+    margin-top: 2.5em;
+    margin-bottom: 3.75em;
+  }
+  .main__bookshelf__fee {
+    margin: 0 1.5625em;
+    margin-top: 1.875em;
+    border: 1px solid #000;
+    height: 350px;
+    max-width: 100%;
+    max-height: 104px;
+  }
+  .main__price__title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+  }
+  h4.main__content__title:nth-child(3) {
+    margin-bottom: 1em;
+  }
+  h4.main__content__title:nth-child(4) {
+    margin-top: 1.3333333333em;
   }
 }
 /* base */
